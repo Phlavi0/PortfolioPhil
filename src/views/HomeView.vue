@@ -1,9 +1,9 @@
-<script setup>
-import Top from "@/components/Top.vue";
-import Languages from "@/components/Languages.vue";
-import Works from "@/components/Works.vue";
-import Interests from "@/components/Interests.vue";
-import Contact from "@/components/Contact.vue";
+<script setup lang="ts">
+import Top from "../components/Top.vue";
+import Languages from "../components/Languages.vue";
+import Works from "../components/Works.vue";
+import Interests from "../components/Interests.vue";
+import Contact from "../components/Contact.vue";
 
 </script>
 

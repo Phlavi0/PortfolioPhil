@@ -18,10 +18,7 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: "Contact"
-}
+<script setup lang="ts">
 </script>
 
 <style scoped>

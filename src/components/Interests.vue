@@ -17,28 +17,28 @@
       <input hidden type="radio" class="cs_anchor radio" name="slider" id="slide1"/>
       <input hidden type="radio" class="cs_anchor radio" name="slider" id="slide2"/>
       <input hidden type="radio" class="cs_anchor radio" name="slider" id="slide3"/>
-      <input hidden type="radio" class="cs_anchor radio" name="slider" id="play1" checked=""/>
+      <input hidden type="radio" class="cs_anchor radio" name="slider" id="play1"/>
 
       <div class="images">
         <div class="images-inner">
           <div class="image-slide">
             <iframe style="border-radius:12px"
                     src="https://open.spotify.com/embed/playlist/1zvMMlppmYMq3ngfvNTJ1s?utm_source=generator"
-                    width="100%" height="352" frameBorder="0" allowfullscreen=""
+                    width="100%" height="352" frameBorder="0"
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                     loading="lazy"></iframe>
           </div>
           <div class="image-slide">
             <iframe style="border-radius:12px"
                     src="https://open.spotify.com/embed/playlist/0mqLF7j8TXMMUGLn5GNnvl?utm_source=generator"
-                    width="100%" height="352" frameBorder="0" allowfullscreen=""
+                    width="100%" height="352" frameBorder="0"
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                     loading="lazy"></iframe>
           </div>
           <div class="image-slide">
             <iframe style="border-radius:12px"
                     src="https://open.spotify.com/embed/playlist/458n0UKC0FkL1hyFWe70IY?utm_source=generator"
-                    width="100%" height="352" frameBorder="0" allowfullscreen=""
+                    width="100%" height="352" frameBorder="0"
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                     loading="lazy"></iframe>
           </div>
@@ -60,14 +60,13 @@
       <h3 class="recent-track-title">Recent Tracks · Phil Austin</h3>
       <div class="recent-track" v-for="track in tracks.slice(0, 7)">
         <div class="recent-track-number">{{ tracks.indexOf(track) + 1 }}</div>
-        <img class="recent-track-image" v-if="track.date?.['#text'] !== undefined" :src="track.image[2]['#text']"/>
-        <img class="recent-track-image fa-beat-fade" v-else :src="track.image[3]['#text']"/>
-
+        <img class="recent-track-image" v-if="track.date?.['#text'] !== undefined" :src="getimgURL(track)"/>
+        <img class="recent-track-image fa-beat-fade" v-else :src="getimgURL(track)"/>
         <div class="recent-track-name"> {{ track.name }}</div>
         <div class="recent-track-artist">{{ track.artist["#text"] }}</div>
         <div class="recent-track-album">{{ track.album["#text"] }}</div>
         <div class="recent-track-date" v-if="track.date?.['#text'] !== undefined">
-          {{ computeTimeElapsed(track.date["#text"]) }}
+          {{ computeTimeElapsed({lastPlayedTimestamp: track.date["#text"]}) }}
         </div>
         <div v-else class="recent-track-date">Now Listening...</div>
       </div>
@@ -75,17 +74,19 @@
   </section>
 </template>
 
-<script setup>
-import {useLastfm} from "@/Composables/use-lastfm";
+<script setup lang="ts">
+import {useLastfm} from "../Composables/use-lastfm";
 import moment from "moment";
-import {Native} from "locomotive-scroll";
-import {onMounted} from "vue";
 
 const {tracks} = useLastfm();
 
-function computeTimeElapsed(lastPlayedTimestamp) {
+function computeTimeElapsed({lastPlayedTimestamp}: { lastPlayedTimestamp: any }) {
   return moment(lastPlayedTimestamp, 'DD MMM YYYY, HH:mm').add(8, 'hours').fromNow();
 }
+function getimgURL(track: any): string {
+  return track.image.find((image: any) => image.size === 'extralarge')?.['#text'] || '';
+}
+
 
 </script>
 

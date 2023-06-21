@@ -1,4 +1,4 @@
-import type {recentlisten} from "@/Composables/types";
+import type {recentlisten} from "../Composables/types";
 import { ref, onMounted } from 'vue';
 
 const API_URL = 'http://ws.audioscrobbler.com/2.0/?';

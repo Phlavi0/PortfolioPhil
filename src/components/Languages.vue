@@ -20,12 +20,7 @@
 
 </template>
 
-<script>
-export default {
-  name: "Languages"
-}
-
-
+<script setup lang="ts">
 </script>
 
 <style scoped>

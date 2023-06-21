@@ -4,7 +4,7 @@ export interface recentlisten{
         "#text":string;
     }
     image:{
-
+        '#text': string;
     }
     date:{
         uts:string;
