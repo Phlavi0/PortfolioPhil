@@ -4,9 +4,9 @@
     <div id="homepage-slider" class="st-slider ">
       <div class="e68_100">
         <div class="e68_98"></div>
-        <div class=e41_98>
+        <div class="e41_98" style="padding: 2%">
           <a href="https://open.spotify.com/user/n261goyy88inw6x2dbaybm3cv?si=aa55e782cc3044ce" target="_blank">
-            <div class="ei41_98_39_16"></div>
+            <div class="fa-brands fa-spotify fa-2xl" style="color: #02f25e;"></div>
           </a>
 
         </div>
@@ -110,13 +110,6 @@ function getimgURL(track: any): string {
   position: absolute;
   left: 6px;
   top: 5px;
-}
-
-.ei41_98_39_16 {
-  width: 64px;
-  height: 62px;
-  background-image: url("src/assets/icons/Spotify_icon.png");
-  background-size: cover;
 }
 
 .e68_99 {
