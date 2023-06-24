@@ -2,7 +2,7 @@
   <div class=e8_3><span  class="e13_6">PHILIP CADUNGOG</span>
     <div class=e100_37>
       <div class="hero-logo">
-        <img src="/src/assets/centerpic.jpg" class="ei100_37_38_3">
+        <img src="/src/assets/centerpic.jpg" class="ei100_37_38_3" alt="">
       </div>
     </div><span  class="e13_5">PHILIP CADUNGOG</span>
     <div class=e24_7>
@@ -21,25 +21,25 @@
   overflow:hidden;
 }
 .e8_3 {
-  width:1280.183837890625px;
-  height:910.3529052734375px;
+  width:1280px;
+  height:910px;
   position:absolute;
 }
 .e13_6 {
   color:rgba(255, 255, 255, 1);
-  width:889.1017456054688px;
-  height:145.6642608642578px;
+  width:889px;
+  height:145px;
   position:absolute;
   left:215px;
-  top:232.50987243652344px;
-  font-family:"Inter Black";
+  top:232px;
+  font-family:"Inter Black",serif;
   text-align:center;
-  font-size:87.9482421875px;
+  font-size:87px;
   letter-spacing:0;
 }
 .e100_37 {
-  width:571.6376342773438px;
-  height:690.765869140625px;
+  width:571px;
+  height:690px;
   position:absolute;
   left:354px;
   top:52px;
@@ -50,62 +50,54 @@
   margin: auto;
   width: 510px;
   height: 670px;
-  left:0px;
-  top:0px;
   transition: transform 0.5s ease;
   background-repeat:no-repeat;
   background-size:cover;
 }
 .e13_5 {
-  width:889.1017456054688px;
-  height:145.6642608642578px;
+  color:rgba(255, 255, 255, 1);
+  width:889px;
+  height:145px;
   position:absolute;
   left:215px;
-  top:232.50987243652344px;
-  font-family:"Inter Black";
+  top:232px;
+  font-family:"Inter Black",serif;
   text-align:center;
-  font-size:87.9482421875px;
+  font-size:87px;
   letter-spacing:0;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   -webkit-text-fill-color: transparent;
 }
 .e24_7 {
-  width:28.479965209960938px;
-  height:17.008869171142578px;
+  width:28px;
+  height:17px;
   position:absolute;
-  left:1222.5478515625px;
-  top:25.346540451049805px;
+  left:1222px;
+  top:25px;
 }
 .e24_4 {
-     border:1.9777755737304688px solid rgba(255, 255, 255, 1);
+     border:2px solid rgba(255, 255, 255, 1);
    }
 .e24_4 {
-  width:28.479965209960938px;
-  height:0px;
+  width:28px;
   position:absolute;
-  left:0px;
-  top:0px;
 }
 .e24_5 {
-     border:1.9777755737304688px solid rgba(255, 255, 255, 1);
+     border:2px solid rgba(255, 255, 255, 1);
    }
 .e24_5 {
-  width:28.479965209960938px;
-  height:0px;
+  width:28px;
   position:absolute;
-  left:0.0000032229784210358048px;
-  top:8.504432678222656px;
+  top:8px;
 }
 .e24_6 {
-     border:1.9777755737304688px solid rgba(255, 255, 255, 1);
+     border:2px solid rgba(255, 255, 255, 1);
    }
 .e24_6 {
-  width:28.479965209960938px;
-  height:0px;
+  width:28px;
   position:absolute;
-  left:0.0000032229784210358048px;
-  top:17.008867263793945px;
+  top:17px;
 }
 
 </style>

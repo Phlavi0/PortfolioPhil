@@ -52,7 +52,7 @@
   -webkit-text-fill-color: transparent;
 }
 .inter{
-  font-family: "Inter Black";
+  font-family: "Inter Black",serif;
 }
   .hiim
   {

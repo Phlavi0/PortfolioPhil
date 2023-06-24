@@ -14,7 +14,7 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="post">
-          <img src="../assets/vetclinic.png" class="post-thumb center"/>
+          <img src="../assets/vetclinic.png" class="post-thumb center" alt=""/>
           <h2 class="post-title inter">VETCARE: A WEB-BASED PET CARE MANAGEMENT SYSTEM FOR THE CATS N DOGS VETERINARY
             CLINIC IN DUMAGUETE CITY</h2>
           <div class="post-excerpt">- Developed using Laravel Framework and MySQL <br>
@@ -26,7 +26,7 @@
       </div>
       <div class="carousel-item">
           <div class="post">
-            <img src="../assets/bloodbank.png" class="center"/>
+            <img src="../assets/bloodbank.png" class="center" alt=""/>
           <h3 class="post-title inter">BLOOD BANK SYSTEM</h3>
           <div class="post-excerpt">- Developed using Laravel Framework and PHP. <br>
             - Assigned in designing (UI) frontend of the system.
@@ -36,7 +36,7 @@
       </div>
       <div class="carousel-item">
         <div class="post">
-          <img src="../assets/dentalsystem.png" class=" center"/>
+          <img src="../assets/dentalsystem.png" class=" center" alt=""/>
           <h2 class="post-title inter">DENTAL INFORMATION AND APPOINTMENT SYSTEM</h2>
           <div class="post-excerpt">- Developed using Visual Basic and DB2 <br>
             - Assigned in planning, backend. and focusing more on the frontend of the system.
@@ -46,7 +46,7 @@
       </div>
       <div class="carousel-item">
         <div class="post">
-          <img src="../assets/pharmsystem.png" class="center"/>
+          <img src="../assets/pharmsystem.png" class="center" alt=""/>
           <h2 class="post-title inter">Pharmaceutical Drug Distributor System</h2>
           <div class="post-excerpt">- Developed using Visual Basic and DB2 <br>
             - Assigned with designing the database and the back-end.
@@ -103,7 +103,7 @@
   margin-bottom: 5%;
 }
 .inter{
-  font-family: "Inter Black";
+  font-family: "Inter Black",serif;
 }
 .post-excerpt{
   font-size: medium;

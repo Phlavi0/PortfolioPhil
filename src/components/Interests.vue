@@ -24,21 +24,21 @@
           <div class="image-slide">
             <iframe style="border-radius:12px"
                     src="https://open.spotify.com/embed/playlist/1zvMMlppmYMq3ngfvNTJ1s?utm_source=generator"
-                    width="100%" height="352" frameBorder="0"
+                    width="100%" height="352"
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                     loading="lazy"></iframe>
           </div>
           <div class="image-slide">
             <iframe style="border-radius:12px"
                     src="https://open.spotify.com/embed/playlist/0mqLF7j8TXMMUGLn5GNnvl?utm_source=generator"
-                    width="100%" height="352" frameBorder="0"
+                    width="100%" height="352"
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                     loading="lazy"></iframe>
           </div>
           <div class="image-slide">
             <iframe style="border-radius:12px"
                     src="https://open.spotify.com/embed/playlist/458n0UKC0FkL1hyFWe70IY?utm_source=generator"
-                    width="100%" height="352" frameBorder="0"
+                    width="100%" height="352"
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                     loading="lazy"></iframe>
           </div>
@@ -60,8 +60,8 @@
       <h3 class="recent-track-title">Recent Tracks · Phil Austin</h3>
       <div class="recent-track" v-for="track in tracks.slice(0, 7)">
         <div class="recent-track-number">{{ tracks.indexOf(track) + 1 }}</div>
-        <img class="recent-track-image" v-if="track.date?.['#text'] !== undefined" :src="getimgURL(track)"/>
-        <img class="recent-track-image fa-beat-fade" v-else :src="getimgURL(track)"/>
+        <img class="recent-track-image" v-if="track.date?.['#text'] !== undefined" :src="getimgURL(track)" alt=""/>
+        <img class="recent-track-image fa-beat-fade" v-else :src="getimgURL(track)" alt=""/>
         <div class="recent-track-name"> {{ track.name }}</div>
         <div class="recent-track-artist">{{ track.artist["#text"] }}</div>
         <div class="recent-track-album">{{ track.album["#text"] }}</div>
@@ -92,26 +92,24 @@ function getimgURL(track: any): string {
 
 <style scoped>
 .e68_100 {
-  width: 282.7596740722656px;
-  height: 76.30022430419922px;
+  width: 282px;
+  height: 76px;
 }
 
 .e68_98 {
   background-color: rgba(24.000000469386578, 24.000000469386578, 24.000000469386578, 1);
-  width: 282.7596740722656px;
-  height: 76.30022430419922px;
+  width: 282px;
+  height: 76px;
   position: absolute;
-  left: 0px;
-  top: 0px;
-  border-radius: 14.960831642150879px;
+  border-radius: 14px;
 }
 
 .e41_98 {
-  width: 67.32373809814453px;
-  height: 65.80962371826172px;
+  width: 67px;
+  height: 65px;
   position: absolute;
-  left: 6.732351303100586px;
-  top: 5.235898494720459px;
+  left: 6px;
+  top: 5px;
 }
 
 .ei41_98_39_16 {
@@ -276,7 +274,7 @@ function getimgURL(track: any): string {
 }
 
 .inter {
-  font-family: "Inter Black";
+  font-family: "Inter Black",serif;
 }
 
 .container {

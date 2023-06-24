@@ -9,32 +9,32 @@ import Contact from "../components/Contact.vue";
 
 <template>
   <main>
-    <nav className="Quick-navigation">
-      <a href="#A" className="Quick-navigation-item pad">Home</a>
-      <a href="#B" className="Quick-navigation-item pad">Languages</a>
-      <a href="#C" className="Quick-navigation-item pad">Works</a>
-      <a href="#D" className="Quick-navigation-item pad">Interests</a>
-      <a href="#E" className="Quick-navigation-item pad">Contact</a>
-      <div className="Scroll-progress-indicator"></div>
+    <nav class="Quick-navigation">
+      <a href="#A" class="Quick-navigation-item pad">Home</a>
+      <a href="#B" class="Quick-navigation-item pad">Languages</a>
+      <a href="#C" class="Quick-navigation-item pad">Works</a>
+      <a href="#D" class="Quick-navigation-item pad">Interests</a>
+      <a href="#E" class="Quick-navigation-item pad">Contact</a>
+      <div class="Scroll-progress-indicator"></div>
     </nav>
 
-    <section id="A" className="js-scroll-step">
+    <section id="A" class="js-scroll-step">
       <Top/>
     </section>
 
-    <section id="B" className="js-scroll-step">
+    <section id="B" class="js-scroll-step">
       <languages/>
     </section>
 
-    <section id="C" className="js-scroll-step">
+    <section id="C" class="js-scroll-step">
       <works/>
     </section>
 
-    <section id="D" className="js-scroll-step">
+    <section id="D" class="js-scroll-step">
       <interests/>
     </section>
 
-    <section id="E" className="js-scroll-step" style="height: 250px">
+    <section id="E" class="js-scroll-step" style="height: 250px">
       <contact/>
     </section>
     <footer class="bg-black">
@@ -69,7 +69,7 @@ import Contact from "../components/Contact.vue";
         </p>
       </div>
     </footer>
-    <button className="Scroll-to-top">Scroll To Top</button>
+    <button class="Scroll-to-top">Scroll To Top</button>
   </main>
   <!-- Modal -->
   <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeTitle">
@@ -183,8 +183,8 @@ import Contact from "../components/Contact.vue";
       </div><!-- /.modal-content -->
     </div>
   </div>
-  <div className="animateme">
-    <ul className="bg-bubbles">
+  <div class="animateme">
+    <ul class="bg-bubbles">
       <li></li>
       <li></li>
       <li></li>
@@ -235,10 +235,6 @@ footer {
   color: #fff;
 }
 
-.contact .button-icon {
-  padding-left: 10px;
-}
-
 .contact-text {
   font-family: "Lato", serif;
   font-size: 1rem;
@@ -255,8 +251,8 @@ footer {
 
 .animateme {
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -408,7 +404,6 @@ footer {
 
 @-webkit-keyframes square {
   0% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 0;
   }
@@ -416,7 +411,6 @@ footer {
     opacity: 1;
   }
   100% {
-    -webkit-transform: translateY(-700px) rotate(600deg);
     transform: translateY(-700px) rotate(600deg);
     opacity: 1;
   }
@@ -424,7 +418,6 @@ footer {
 
 @keyframes square {
   0% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 0;
   }
@@ -432,7 +425,6 @@ footer {
     opacity: 1;
   }
   100% {
-    -webkit-transform: translateY(-700px) rotate(600deg);
     transform: translateY(-700px) rotate(600deg);
     opacity: 0;
   }

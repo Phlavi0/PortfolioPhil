@@ -10,7 +10,7 @@
           </a></li>
           <li> <a href="https://www.linkedin.com/in/philip-augustine-cadungog-823777262" target="_blank"><i class="fa fa-linkedin fa-xl" title="LinkedIn" aria-hidden="true"></i>
           </a></li>
-          <li> <a href="#fb"><i class="fa fa-facebook fa-xl" title="Facebook" aria-hidden="true"></i>
+          <li> <a href="https://www.facebook.com/Phil.Austin28"><i class="fa fa-facebook fa-xl" title="Facebook" aria-hidden="true"></i>
           </a></li>
         </ul>
       </div>
@@ -26,7 +26,7 @@ h2 {
   font-size: 2.5rem;
   text-transform: uppercase;
   letter-spacing: 0.7rem;
-  font-family: "Inter Black";
+  font-family: "Inter Black",serif;
 }
 /*social list main*/
 .social-footer h2 {
