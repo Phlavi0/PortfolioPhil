@@ -158,9 +158,9 @@ import Contact from "../components/Contact.vue";
           </div>
           <div class="row text-center">
             <a class="btn td-btn outline green mb-30"
-               href="https://github.com/tiffanyadu/portfolio/blob/master/assets/docs/Tiffany_Du_Resume.pdf"
+               href="https://github.com/Phlavi0/PortfolioPhil/blob/master/src/assets/PHILIP%20AUGUSTINE%20CADUNGOG.pdf"
                target="_blank" download><span class="glyphicon glyphicon-download-alt"></span> Download PDF</a>
-            <a class="btn td-btn outline green iconBtn mb-30" href="https://www.linkedin.com/in/tiffanyadu/"
+            <a class="btn td-btn outline green iconBtn mb-30" href="https://www.linkedin.com/in/philip-augustine-cadungog-823777262"
                target="_blank"><span class="glyphicon glyphicon-user"></span> View LinkedIn Profile</a>
           </div>
           <div class="modal-footer center">
