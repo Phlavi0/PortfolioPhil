@@ -87,44 +87,40 @@ import Contact from "../components/Contact.vue";
               <h2>Experience</h2>
             </div>
           </div>
-          <div class="row mb-15">
+          <div class="row">
             <div class="col-md-3 col-lg-2 col-lg-offset-1">
-              <p class="year">2012 - Present</p>
+              <p class="year">2023</p>
             </div>
             <div class="col-md-9 col-lg-8">
-              <h4>Freelancer</h4>
-              <p class="mb-0"><strong>Too Much Sauce - Web Design and Development</strong></p>
-              <p>Designed and developed a website using Bootstrap to help show off a series of animated GIFs. Currently
-                working on converting into a Wordpress theme.</p>
-              <p class="mb-0"><strong>Ryan Bechtel - Web Design and Development</strong></p>
-              <p>Redesigned and developed a responsive website that better highlights the client’s work reel.</p>
-              <p class="mb-0"><strong>Kaelyn Benham - Web Consultation</strong></p>
-              <p>Automated process of capturing new subscribers’ email addresses by integrating Eventbrite and MailChimp
-                using Zapier. Coded temporary “Coming Soon” page with MailChimp signup form. Helped set up hosting
-                service with domain transfers and FTP accounts.</p>
-              <p class="mb-0"><strong>MK Education - Web and Graphic Design</strong></p>
-              <p>Designed a set of header banners for website. Helped customize and complete website using Wix.</p>
-              <p class="mb-0"><strong>Chef Arun - Graphic Design</strong></p>
-              <p>Developed a logo for the upcoming line of Thai packaged foods. Created artwork for rice bag
-                packaging.</p>
-              <p class="mb-0"><strong>East China Inn - Graphic Design</strong></p>
-              <p>Designed punch card coupons to increase customer loyalty.</p>
+              <h4>Web Dev Intern</h4>
+              <p><strong>Miller Solutions Development</strong></p>
+              <p class="mb-0">Trained for most of our time learning about Vue3, TypeScript and applying APIs.
+                Learning about UI/UX design from a specialist at Miller and were then given the task of creating a
+                UI/UX solution for a client's web application.</p>
             </div>
           </div>
           <div class="row">
             <div class="col-md-3 col-lg-2 col-lg-offset-1">
-              <p class="year">2016</p>
+              <p class="year">2018</p>
             </div>
             <div class="col-md-9 col-lg-8">
-              <h4>Inside Sales / Customer Service Representative</h4>
-              <p><strong>D&amp;H Granite and Marble Supply</strong></p>
-              <ul>
-                <li>Standardized the order fulfillment workflow to establish consistency between team members.</li>
-                <li>Responsible for assisting customers with project inquiries and estimates, coordinating fabrication
-                  and installation schedules, and conflict resolution.
-                </li>
-                <li>Other duties included managing inventory and training new employees.</li>
-              </ul>
+              <h4>On the Job Training</h4>
+              <p><strong>City Engineer's Office</strong></p>
+              <p class="mb-0">On my senior HS training where I learned how to use Computer-aided Design or CAD,
+                and how to survey land. There was also team building exercises with my peers.  </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 col-lg-2 col-lg-offset-1">
+              <p class="year">2010 - 2017</p>
+            </div>
+            <div class="col-md-9 col-lg-8">
+              <h4>Assistant Manager</h4>
+              <p><strong>Mt. Carmel Spring Purified Water and Coca-Cola Distributor</strong></p>
+              <p class="mb-0">A family-owned drinking water and Coca-Cola distribution business in
+                Bayawan City wherein I am tasked to organize reports of transactions and supplies, check deliveries,
+                check inventory, and also I was in charge of handling cash transactions with customers and employees.
+                I also sometimes deliver them myself.</p>
             </div>
           </div>
           <div class="row">
@@ -136,20 +132,11 @@ import Contact from "../components/Contact.vue";
               </div>
               <div class="row mb-15">
                 <div class="col-sm-3 col-md-4">
-                  <p class="year">2012 - 2015</p>
+                  <p class="year">2019 - 2023</p>
                 </div>
                 <div class="col-sm-9 col-md-8">
-                  <p class="mb-0"><strong>MFA in Web Design &amp; New Media</strong></p>
-                  <p>Academy of Art University</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-3 col-md-4">
-                  <p class="year">2007 - 2010</p>
-                </div>
-                <div class="col-sm-9 col-md-8">
-                  <p class="mb-0"><strong>BFA in Industrial Design</strong></p>
-                  <p>Columbia College Chicago</p>
+                  <p class="mb-0"><strong>Bachelor of Science In Information Technology</strong></p>
+                  <p>Silliman University</p>
                 </div>
               </div>
             </div>
@@ -161,10 +148,10 @@ import Contact from "../components/Contact.vue";
               </div>
               <div class="row">
                 <ul>
-                  <li><strong>Web:</strong> HTML, CSS, JavaScript, jQuery, PHP (limited)</li>
-                  <li><strong>UX/UI Tools:</strong> Sketch, Balsamiq, Axure, InVision</li>
-                  <li><strong>Adobe CC:</strong> Illustrator, InDesign, Photoshop</li>
-                  <li><strong>Other:</strong> Positive, adaptable, attentive, resourceful</li>
+                  <li><strong>Web:</strong> Laravel, Vue3, PHP, TS, Bootstrap</li>
+                  <li><strong>UX/UI Tools:</strong> Figma, Canva</li>
+                  <li><strong>Adobe CC:</strong> Photoshop</li>
+                  <li><strong>Other:</strong> APIs, C, C++, C#, Java</li>
                 </ul>
               </div>
             </div>

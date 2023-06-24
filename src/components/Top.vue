@@ -27,8 +27,6 @@
 }
 .e13_6 {
   color:rgba(255, 255, 255, 1);
-  width:889px;
-  height:145px;
   position:absolute;
   left:215px;
   top:232px;
@@ -56,8 +54,6 @@
 }
 .e13_5 {
   color:rgba(255, 255, 255, 1);
-  width:889px;
-  height:145px;
   position:absolute;
   left:215px;
   top:232px;
