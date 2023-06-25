@@ -10,31 +10,31 @@ import Contact from "../components/Contact.vue";
 <template>
   <main>
     <nav class="Quick-navigation">
-      <a href="#A" class="Quick-navigation-item pad">Home</a>
-      <a href="#B" class="Quick-navigation-item pad">Languages</a>
-      <a href="#C" class="Quick-navigation-item pad">Works</a>
-      <a href="#D" class="Quick-navigation-item pad">Interests</a>
-      <a href="#E" class="Quick-navigation-item pad">Contact</a>
+      <a href="#Top" class="Quick-navigation-item pad">Home</a>
+      <a href="#Languages" class="Quick-navigation-item pad">Languages</a>
+      <a href="#Works" class="Quick-navigation-item pad">Works</a>
+      <a href="#Interests" class="Quick-navigation-item pad">Interests</a>
+      <a href="#Contact" class="Quick-navigation-item pad">Contact</a>
       <div class="Scroll-progress-indicator"></div>
     </nav>
 
-    <section id="A" class="js-scroll-step">
+    <section id="Top" class="js-scroll-step">
       <Top/>
     </section>
 
-    <section id="B" class="js-scroll-step">
+    <section id="Languages" class="js-scroll-step">
       <languages/>
     </section>
 
-    <section id="C" class="js-scroll-step">
+    <section id="Works" class="js-scroll-step">
       <works/>
     </section>
 
-    <section id="D" class="js-scroll-step">
+    <section id="Interests" class="js-scroll-step">
       <interests/>
     </section>
 
-    <section id="E" class="js-scroll-step" style="height: 250px">
+    <section id="Contact" class="js-scroll-step" style="height: 250px">
       <contact/>
     </section>
     <footer class="bg-black">
