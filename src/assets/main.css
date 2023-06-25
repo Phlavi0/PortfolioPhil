@@ -72,24 +72,24 @@ section {
   opacity: 1;
 }
 
-#A {
+#Top {
   background: rgba(0, 0, 0, 0.9);
 }
 
-#B {
+#Languages {
   background: rgba(25, 25, 25, 0.9);
 }
 
-#C {
+#Works {
   background: rgba(0, 0, 0, 0.9);
 }
 
-#D {
+#Interests {
   background: rgba(25, 25, 25, 0.9);
   height: auto;
 }
 
-#E {
+#Contact {
   background: rgba(0, 0, 0, 0.9);
 }
 
