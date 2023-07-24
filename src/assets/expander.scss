@@ -1,11 +1,4 @@
-$optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
-  .credit {
-    position: absolute;
-    bottom:20px;
-    left:20px;
 
-    color:inherit;
-  }
   .options {
     margin-top: 100px;
     display:flex;
@@ -42,19 +35,12 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
       cursor: pointer;
 
       transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-
-      @for $i from 1 through length($optionDefaultColours) {
-        &:nth-child(#{$i}) {
-          --defaultBackground:#{nth($optionDefaultColours, $i)};
-        }
-      }
       &.active {
         flex-grow:10000;
         transform:scale(1);
 
         max-width:600px;
-        margin:0px;
-        border-radius:40px;
+        border-radius:20px;
 
         background-size:auto 100%;
         .shadow {
@@ -64,7 +50,6 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
           bottom:20px;
           left:20px;
           .info >div {
-            left:0px;
             opacity:1;
           }
         }
@@ -75,7 +60,7 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
       &:not(.active) {
         flex-grow:1;
 
-        border-radius:30px;
+        border-radius:10px;
         .shadow {
           bottom:-40px;
           box-shadow:inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
@@ -91,9 +76,6 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
       }
       .shadow {
         position: absolute;
-        bottom:0px;
-        left:0px;
-        right:0px;
 
         height:120px;
 
@@ -102,7 +84,6 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
       .label {
         display:flex;
         position: absolute;
-        right:0px;
 
         height:40px;
         transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
@@ -134,10 +115,6 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
             position: relative;
 
             transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity .5s ease-out;
-          }
-          .main {
-            font-weight:bold;
-            font-size:1.2rem;
           }
           .sub {
             transition-delay:.1s;

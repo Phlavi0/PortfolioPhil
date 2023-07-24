@@ -5,9 +5,6 @@
     <div class="option active" style="--optionBackground: url(src/assets/interest/biking.jpg); ">
       <div class="shadow"></div>
       <div class="label">
-        <div class="icon">
-          <i class="fa-solid fa-bicycle"></i>
-        </div>
         <div class="info">
           <div class="sub">Mountain Biking</div>
         </div>
@@ -16,9 +13,6 @@
     <div class="option" style="--optionBackground:url(src/assets/interest/code.jpg);">
       <div class="shadow"></div>
       <div class="label">
-        <div class="icon">
-          <i class="fa-solid fa-computer"></i>
-        </div>
         <div class="info">
           <div class="sub">Coding</div>
         </div>
@@ -27,9 +21,6 @@
     <div class="option" style="--optionBackground:url(src/assets/interest/gaming.jpg);">
       <div class="shadow"></div>
       <div class="label">
-        <div class="icon">
-          <i class="fa-solid fa-gamepad"></i>
-        </div>
         <div class="info">
           <div class="sub">Gaming</div>
         </div>
@@ -38,9 +29,6 @@
     <div class="option" style="--optionBackground:url(src/assets/interest/offroading.jpg);">
       <div class="shadow"></div>
       <div class="label">
-        <div class="icon">
-          <i class="fa-solid fa-truck-monster"></i>
-        </div>
         <div class="info">
           <div class="sub">Offroading</div>
         </div>
@@ -49,9 +37,6 @@
     <div class="option" style="--optionBackground:url(src/assets/interest/music.jpg);">
       <div class="shadow"></div>
       <div class="label">
-        <div class="icon">
-          <i class="fa-solid fa-music"></i>
-        </div>
         <div class="info">
           <div class="sub">Music</div>
         </div>
