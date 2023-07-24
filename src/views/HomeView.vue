@@ -4,11 +4,29 @@ import Languages from "../components/Languages.vue";
 import Works from "../components/Works.vue";
 import Interests from "../components/Interests.vue";
 import Contact from "../components/Contact.vue";
+import {ref} from "vue";
+import Spotify from "@/components/spotify.vue";
 
+const isDropdownOpen = ref(false);
+const isSubmenuOpen = ref(false);
+
+function toggleDropdown() {
+  isDropdownOpen.value = !isDropdownOpen.value;
+}
+
+function toggleSubmenu() {
+  isSubmenuOpen.value = !isSubmenuOpen.value;
+}
 </script>
 
 <template>
   <main>
+    <input id="burger" type="checkbox" hidden=""/>
+    <label for="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
     <nav class="Quick-navigation">
       <a href="#Top" class="Quick-navigation-item pad">Home</a>
       <a href="#Languages" class="Quick-navigation-item pad">Languages</a>
@@ -33,6 +51,10 @@ import Contact from "../components/Contact.vue";
     <section id="Interests" class="js-scroll-step">
       <interests/>
     </section>
+    <section id="Spotify" class="js-scroll-step">
+      <spotify/>
+    </section>
+
 
     <section id="Contact" class="js-scroll-step" style="height: 250px">
       <contact/>
@@ -190,6 +212,63 @@ import Contact from "../components/Contact.vue";
 
 </template>
 <style scoped>
+input + label {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  height: 20px;
+  width: 15px;
+  z-index: 5;
+}
+input + label span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  margin-top: -1px;
+  left: 0;
+  display: block;
+  background: white;
+  transition: 0.5s;
+}
+input + label span:first-child {
+  top: 3px;
+}
+input + label span:last-child {
+  top: 16px;
+}
+label:hover {
+  cursor: pointer;
+}
+input:checked + label span {
+  opacity: 0;
+  top: 50%;
+}
+input:checked + label span:first-child {
+  opacity: 1;
+  transform: rotate(405deg);
+}
+input:checked + label span:last-child {
+  opacity: 1;
+  transform: rotate(-405deg);
+}
+input ~ nav {
+  overflow: hidden;
+}
+input ~ nav > ul > li {
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+input ~ nav > ul > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #020304;
+  font-weight: 700;
+  font-family: sans-serif;
+  display: block;
+  padding: 30px;
+}
 
 footer {
   background: rgba(25, 25, 25, 0.9);
@@ -258,7 +337,6 @@ footer {
 .bg-bubbles li {
   position: absolute;
   list-style: none;
-  display: block;
   width: 40px;
   height: 40px;
   background-color: #353535;

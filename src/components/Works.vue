@@ -15,42 +15,53 @@
       <div class="carousel-item active">
         <div class="post">
           <img src="../assets/vetclinic.png" class="post-thumb center" alt=""/>
-          <h2 class="post-title inter">VETCARE: A WEB-BASED PET CARE MANAGEMENT SYSTEM FOR THE CATS N DOGS VETERINARY
-            CLINIC IN DUMAGUETE CITY</h2>
-          <div class="post-excerpt">- Developed using Laravel Framework and MySQL <br>
-            - Hosted using Hostinger Hosting Services <br>
-            - Assigned in backend, frontend, and documentation.
-            <a class="float-end text-white" href="https://vetcare2023.online" target="_blank"><u>View Project</u></a>
+          <div class="post-text">
+            <h2 class="post-title inter">VETCARE</h2>
+            <div class="post-excerpt">
+              A WEB-BASED PET CARE MANAGEMENT SYSTEM FOR THE CATS N DOGS VETERINARY
+              CLINIC IN DUMAGUETE CITY<br>
+              - Developed using Laravel Framework and MySQL <br>
+              - Hosted using Hostinger Hosting Services <br>
+              - Assigned in backend, frontend, and documentation.
+              <a class="float-end text-white" href="https://www.canva.com/design/DAFoaVAEKUI/3seoRasUpnuEBOd-49lZHw/view?utm_content=DAFoaVAEKUI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank"><u>View Project</u></a>
+            </div>
           </div>
         </div>
       </div>
       <div class="carousel-item">
           <div class="post">
-            <img src="../assets/bloodbank.png" class="center" alt=""/>
-          <h3 class="post-title inter">BLOOD BANK SYSTEM</h3>
-          <div class="post-excerpt">- Developed using Laravel Framework and PHP. <br>
-            - Assigned in designing (UI) frontend of the system.
-            <a class="float-end text-white" href="https://ccs82022.github.io/" target="_blank"><u>View Project</u></a>
+            <img src="../assets/bloodbank.png" class="post-thumb center" alt=""/>
+          <div class="post-text">
+            <h3 class="post-title inter">BLOOD BANK SYSTEM</h3>
+            <div class="post-excerpt">- Developed using Laravel Framework and PHP. <br>
+              - Assigned in designing (UI) frontend of the system.
+              <a class="float-end text-white" href="https://ccs82022.github.io/" target="_blank"><u>View Project</u></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="post">
+          <img src="../assets/dentalsystem.png" class="post-thumb center" alt=""/>
+          <div class="post-text">
+            <h2 class="post-title inter">DENTAL INFORMATION AND APPOINTMENT SYSTEM</h2>
+            <div class="post-excerpt">- Developed using Visual Basic and DB2 <br>
+              - Assigned in planning, backend. and focusing more on the frontend of the system.
+              <a class="float-end text-white" href="https://github.com/ryjaymes12/dentalinformationandappointmentsystem" target="_blank"><u>View Project</u></a>
+            </div>
           </div>
         </div>
       </div>
       <div class="carousel-item">
         <div class="post">
-          <img src="../assets/dentalsystem.png" class=" center" alt=""/>
-          <h2 class="post-title inter">DENTAL INFORMATION AND APPOINTMENT SYSTEM</h2>
-          <div class="post-excerpt">- Developed using Visual Basic and DB2 <br>
-            - Assigned in planning, backend. and focusing more on the frontend of the system.
-            <a class="float-end text-white" href="https://github.com/ryjaymes12/dentalinformationandappointmentsystem" target="_blank"><u>View Project</u></a>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="post">
-          <img src="../assets/pharmsystem.png" class="center" alt=""/>
-          <h2 class="post-title inter">Pharmaceutical Drug Distributor System</h2>
-          <div class="post-excerpt">- Developed using Visual Basic and DB2 <br>
-            - Assigned with designing the database and the back-end.
-            <a class="float-end text-white" href="https://github.com/ryjaymes12/pdds" target="_blank"><u>View Project</u></a>
+          <img src="../assets/pharmsystem.png" class="post-thumb center" alt=""/>
+          <div class="post-text">
+            <h2 class="post-title inter">Pharmaceutical Drug Distributor System</h2>
+            <div class="post-excerpt">- Developed using Visual Basic and DB2 <br>
+              - Assigned with designing the database and the back-end.
+              <a class="float-end text-white" href="https://github.com/ryjaymes12/pdds" target="_blank"><u>View Project</u></a>
+            </div>
           </div>
         </div>
       </div>
@@ -70,16 +81,57 @@
 </script>
 
 <style scoped>
+@media screen and (min-width: 1024px) {
+  #carouselExampleCaptions {
+    margin: 10%;
+    height: 500px;
+    width: 1000px;
+  }
+  .post-title{
+    font-size: 25px;
+  }
+  .post-excerpt{
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+@media screen and (max-width: 767px) {
+  #carouselExampleCaptions {
+    height: 350px;
+    width: 300px;
+  }
+  .carousel{
+    margin-top: 50px;
+    max-width: 300px;
+  }
+  .post-thumb{
+    max-width: 240px;
+  }
+  .post-title{
+    font-size: 12px;
+  }
+  .post-excerpt{
+    font-size: 8px;
+  }
+  .post-text{
+    margin-left: 20px;
+  }
+
+}
+.post-text{
+  background-color: darkslategrey;
+  border-radius: 10px;
+  padding: 10px;
+}
+
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
-}
-#carouselExampleCaptions {
-  margin: 10%;
-  height: 500px;
-  width: 1000px;
 }
 
 .title{
@@ -105,8 +157,8 @@
 .inter{
   font-family: "Inter Black",serif;
 }
-.post-excerpt{
-  font-size: medium;
-}
 
+.carousel-indicators{
+  margin-top: 10px;
+}
 </style>

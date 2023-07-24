@@ -5,17 +5,20 @@
     </h1>
   </div>
 
-  <div class="align-content-center padding text-md-center">
+  <div class="padding text-md-center">
     <h3 class="inter">LANGUAGES</h3>
-    <img class="iconpad anim" src="../assets/icons/v61_10.png" height="100" width="100" alt="C plus plus"/>
-    <img class="iconpad anim" src="../assets/icons/v61_11.png" height="100" width="100" alt="PHP"/>
-    <img class="iconpad anim" src="../assets/icons/Typescript.png" height="90" width="90" alt="TypeScript"/>
-    <img class="iconpad anim" src="../assets/icons/v61_15.png" height="100" width="100" alt="Java"/>
-    <img class="iconpad anim" src="../assets/icons/v61_19.png" height="100" width="100" alt="C sharp"/>
+      <img class="iconpad anim" src="../assets/icons/v61_10.png" alt="C plus plus"/>
+      <img class="iconpad anim" src="../assets/icons/v61_11.png" alt="PHP"/>
+      <img class="iconpad anim" src="../assets/icons/Typescript.png" height="90" width="90" alt="TypeScript"/>
+      <img class="iconpad anim" src="../assets/icons/v61_15.png" alt="Java"/>
+      <img class="iconpad anim" src="../assets/icons/v61_19.png" alt="C sharp"/>
+
     <h3 class="inter">FRAMEWORKS</h3>
-    <img class="iconpad anim" src="../assets/icons/v61_13.png" height="100" width="100" alt="Laravel"/>
-    <img class="iconpad anim" src="../assets/icons/v61_14.png" height="100" width="100" alt="Vue 3"/>
-    <img class="anim" src="../assets/icons/v61_16.png" height="100" width="100" alt="Bootstrap"/>
+    <div class="iconpack">
+      <img class="iconpad anim" src="../assets/icons/v61_13.png" alt="Laravel"/>
+      <img class="iconpad anim" src="../assets/icons/v61_14.png" alt="Vue 3"/>
+      <img class="iconpad anim" src="../assets/icons/v61_16.png" height="100" width="100" alt="Bootstrap"/>
+    </div>
   </div>
 
 </template>
@@ -24,6 +27,28 @@
 </script>
 
 <style scoped>
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media screen and (max-width: 767px) {
+  h1{
+    font-size: 20px;
+  }
+  h3{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .iconpad{
+    max-width: 6vh;
+    max-height: 6vh;
+  }
+  .iconpack{
+    margin-left: 65px;
+  }
+}
 .anim:hover {
   animation: heartbeat 1s infinite;
 }

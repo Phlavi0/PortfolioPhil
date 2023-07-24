@@ -8,18 +8,11 @@ html {
   box-sizing: inherit;
 }
 
-html, body {
-  height: 100%;
-}
 
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 
-h1 {
-  margin: 0;
-  padding: 0;
-}
 
 section {
   display: flex;
@@ -28,13 +21,28 @@ section {
   color: white;
   font-size: 2rem;
   min-height: 100%;
-  height: 100vh;
+}
+@media screen and (min-width: 1024px) {
+  section{
+    height: 100vh;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  section{
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section{
+    height: 60vh;
+  }
 }
 
 .Quick-navigation {
   position: fixed;
   z-index: 1;
-  margin: 0;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
@@ -88,7 +96,9 @@ section {
   background: rgba(25, 25, 25, 0.9);
   height: auto;
 }
-
+#Spotify{
+  background: rgba(25, 25, 25, 0.9);
+}
 #Contact {
   background: rgba(0, 0, 0, 0.9);
 }

@@ -1,256 +1,93 @@
 <template>
   <h1 class="title fixed-top inter">SOME OF <span class="outlinetext">MY INTERESTS</span></h1>
-  <section class="carousel">
-    <div id="homepage-slider" class="st-slider ">
-      <div class="e68_100">
-        <div class="e68_98"></div>
-        <div class="e41_98" style="padding: 2%">
-          <a href="https://open.spotify.com/user/n261goyy88inw6x2dbaybm3cv?si=aa55e782cc3044ce" target="_blank">
-            <div class="fa-brands fa-spotify fa-2xl" style="color: #02f25e;"></div>
-          </a>
-
+<!--  expander-->
+  <div class="options">
+    <div class="option active" style="--optionBackground:url(https://lh3.googleusercontent.com/pw/AIL4fc_-nm0Wc6ThALLPZ7Hc3rT4KAoVJdQmnCgFBuDQNTQlWQrzmww4MI0X8Wr-wEAfniv6OyG28qGaOlDedcF-j39EAA8u4ZabJLojUzzWJh-hqRklszzyeDV5Xs70cCa863-h9yaS51lWbIsb4W0T0H9P2Z-JmWm-Fq3n6ZkbfUGquslg244K6dXBVWm-v0BqNvy4-6ZIfu7ISBA2807Hn2iRUKR7xlURlwsA6BdA2BDSQQS3zj5nx9NuTfhNkD6g0BBqSo_eOt3MoobEGyDYuNl7JofDwqWr-28Nyxtf4D9NrrO8cFI5jj7-vRyVjR-AkzDAn0xslq7bLwhqFymhMbB2bXkx5FQC1vueuDDf88HZ-5uXY_CYSsst4mzHK_9rYNp1H7TcpyIBcoStqlxsqE8hWdb_i41dKCIZlTXwGQkI_ukOGcl03nizH5ti7sXBx9nfppiHWcnm9XfWUY7aAOOUqZDD7ylEVjsRUTFNZ-5omH3_wy8CaEhjuU-opfwVD0_qXEiipFZcKWx8hvkRfQhThxk12mcbH79XSnJY9MjGDGwYooW17ibcjk_tseLpAlSt8RsrqaMDErosrvo8cXCHvaPUA_GjBfeUTrI8TothQnP7QWLKdTt11LeQ7Ym18WuMriWPTk4p0VMWtez9eXWd8KLM7zjUwhDF0Xi-DSs1Ec9-u6TyfHYEQFpR3C_mGo5FPtBkZxwDayA4knH6VnOyrleuaxD89o8ZutvPMXsPLJGu2cwlkz9aRNGgXzOf4QWXMROfCL65MI9huVujmR6bE3T6iQv48gLQvPlQyBeQIljeG2B1-Wu43LGQvQL2645p0loTTk0D6Nmp3bNjiN9oUbpVmF1mlzSgZkDi-tqJXP2i0fCofF7ahj_ksK8plQ1lE3sYWr1h2W4GPKU69eoX1mGS67aWLJywjTGIROlAlwaYJftFAhx5e-VfkQ=w534-h667-s-no?authuser=2);">
+      <div class="shadow"></div>
+      <div class="label">
+        <div class="icon">
+          <i class="fa-solid fa-bicycle"></i>
         </div>
-        <span class="e68_99 fw-bold">Phil Austin <br>
-            <span style="font-size: 12px">10 public play lists | 6 Followers</span></span>
-      </div>
-      <div class="playlistt inter">Playlists</div>
-      <input hidden type="radio" class="cs_anchor radio" name="slider" id="slide1"/>
-      <input hidden type="radio" class="cs_anchor radio" name="slider" id="slide2"/>
-      <input hidden type="radio" class="cs_anchor radio" name="slider" id="slide3"/>
-      <input hidden type="radio" class="cs_anchor radio" name="slider" id="play1"/>
-
-      <div class="images">
-        <div class="images-inner">
-          <div class="image-slide">
-            <iframe style="border-radius:12px"
-                    src="https://open.spotify.com/embed/playlist/1zvMMlppmYMq3ngfvNTJ1s?utm_source=generator"
-                    width="100%" height="352"
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
-          </div>
-          <div class="image-slide">
-            <iframe style="border-radius:12px"
-                    src="https://open.spotify.com/embed/playlist/0mqLF7j8TXMMUGLn5GNnvl?utm_source=generator"
-                    width="100%" height="352"
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
-          </div>
-          <div class="image-slide">
-            <iframe style="border-radius:12px"
-                    src="https://open.spotify.com/embed/playlist/458n0UKC0FkL1hyFWe70IY?utm_source=generator"
-                    width="100%" height="352"
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
-          </div>
-        </div>
-      </div>
-
-      <div class="labels">
-        <div class="fake-radio">
-          <label for="slide1" class="radio-btn"></label>
-          <label for="slide2" class="radio-btn"></label>
-          <label for="slide3" class="radio-btn"></label>
+        <div class="info">
+          <div class="sub">Mountain Biking</div>
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="container recent-tracks">
-    <div class="recentracks">
-      <h3 class="recent-track-title">Recent Tracks · Phil Austin</h3>
-      <div class="recent-track" v-for="track in tracks.slice(0, 7)">
-        <div class="recent-track-number">{{ tracks.indexOf(track) + 1 }}</div>
-        <img class="recent-track-image" v-if="track.date?.['#text'] !== undefined" :src="getimgURL(track)" alt=""/>
-        <img class="recent-track-image fa-beat-fade" v-else :src="getimgURL(track)" alt=""/>
-        <div class="recent-track-name"> {{ track.name }}</div>
-        <div class="recent-track-artist">{{ track.artist["#text"] }}</div>
-        <div class="recent-track-album">{{ track.album["#text"] }}</div>
-        <div class="recent-track-date" v-if="track.date?.['#text'] !== undefined">
-          {{ computeTimeElapsed({lastPlayedTimestamp: track.date["#text"]}) }}
+    <div class="option" style="--optionBackground:url(https://lh3.googleusercontent.com/pw/AIL4fc9GQib0YMtq23zr-b_isl2fQQR0AAOXE_pcAh45Exj1-4gwy6OiV3_Yj6m7B-_K1m6Z1eEZZeESB9R6hpXH0zhI6nAdGqITXrDbN3sWD8DF7mL-8ry-MmklDxWUe5cZhC9eV8VPHVuRjDLhg7mVVO9W-5UttMLzOdF09ocx3uRgn23iF5ou4-AP4icZTnq1jnjX3UgsiCQe3AD2cP_XR987UlQUWl5QofGOrAkpD-ceNFY6OpNXX3cu5c5RqRNENDZQM_Tbwh6-M2FI40EakBJTBacdrJrLxMPElADxPOZoMTWG7DROm_x0hVkIUBhT0CDDkHHRyyUrWjrHSOINHPX2V-opLQbDj3szh8ZKdmiX4-0fcxmV8QeSZGfrh3nhwinTMJEr26mM4Mx5WEvuSgvjnY__AJssNK2lJf1fsFP-hMcsRNYDsdH_vEaGzBAI6mHgHPEZQ9iwhrvFJx_nEOnS_2EPtUMamTDZaNr9Or0A1vC1uNG8pAsCBRlU5EZrw-dzqAptxMa8zbpFt7eYbFN-kOZ8gx241sji4eN0W8mO-uuyDPv6ZfRW47tb7xvOHUAJgolWIi7CkloFhPeZvU3tH5UjL02T8ie441AUu1wDHxTS9l_vEjmBkU0n6x7GVwn9Q7QhbeefLvxyj01mGyjLkgwGRnDcfC7UU8NRwQEtzieQd8vw8y9saj2moPFAqqb2GiTZGSJMDFEKbM-xXFtVYEzx0RrjDM0EvpcRc0V8JmduDwbSZOJSk9kjAZInSk6mKAe7zpN13t-PJjyaPk2o0vWTn3jtN0IKndmdxK86ZaVgwO-8hdbnrLQIz7IJ6soTQegQx0AemDJsTsD4Al9gKuRpH20AyKeMfHczUuxYc2FJ3SjY3U5Y2dVDq6Ui76BaGcoe6jTMwsAP5veH8m9gDQfXUh1x94iWGO1P2kuWAZ5wUnW8spU-hhwZOg=w500-h667-s-no?authuser=2);">
+      <div class="shadow"></div>
+      <div class="label">
+        <div class="icon">
+          <i class="fa-solid fa-computer"></i>
         </div>
-        <div v-else class="recent-track-date">Now Listening...</div>
+        <div class="info">
+          <div class="sub">Coding</div>
+        </div>
       </div>
     </div>
-  </section>
+    <div class="option" style="--optionBackground:url(https://lh3.googleusercontent.com/pw/AIL4fc_BBTtJUCw8LM5a1mMpWJn5LtZlpsk3Yq0ifpBrbVBs2tNGYITrdWeQInxqLW24V9IGpFD7UBBTAEP3cSqvheyNVvJy4AJVcaFcwDKJe3OPmFqckeA5vEi8ryVTaNbiDZVcwthB_1Fuuyb6Dy_zQmkWVm6Iyf2KFyiOsYB6EeIDG1U2fpODR84Uv4CipwTz2FV-LaGCp6DN3xGELQjsk1DINjze_00VBXKfVQQu5Ip1PFumflDywVIcu009lGmlD8r8Qz731Yj0TswxV0dwN2OYFAzDP9sKB_YowGUReovmxBU1u8HLAYYTBJz3iWRtpJApp7TPVLt7CzueQkPEfXpjtJ5WQGuM6t9HrX8c6rGXVZ4wNfvlllM_9AdwzbfrqOXOxGobArpzCma82RH5FEi5qXdIFTJEHiBD_oleiqaoo4cnO8kTRNp6wx-E6e7-9n36VoWcmx8d98UIjR2J6GJV50wma3YYOt8tmW7DSbVMEtizxL8ee0yVlqCpaaK1abYiIKZ7ok-kME9Lg89_5msoMLw-CpMNhknROw4Yg9pfmZpmSPoAOrrZCec3q2LoVCHsaUL2xF49UQVJF49LqdRxSryx7EaErZ5E8F44YttH7h5hSWlibmD9LcyxLW_aqxRx2sYCeBqPhCAM16UElsfqoTtNesbZmeR8LXVYlGUZp7TK2lMdBI6HsXmirwhAZhGKnRU9IeOd69iydg8AzIRUbrQFgd_n7eRqoWS5nldpO87NtzS8Qwxt55xWjFjhRX0bMdog6IZpE7auJpKD5DNAO5sGEL9oLtQxbXGBV_giqMp0uMNZO-neyGpZR_5qGzo22YPZTMzFZJ21noBfRSLETYdCcTtZKyuVnrbwLyOH-7qd1ZP_ePlou1_RANAn2Do8Q5foWkpbvf9DQDUsyXav95cjBWiSGuVi6vJ_r_Zw8SnFkmfwlnhQtNrfjA=w500-h667-s-no?authuser=2);">
+      <div class="shadow"></div>
+      <div class="label">
+        <div class="icon">
+          <i class="fa-solid fa-gamepad"></i>
+        </div>
+        <div class="info">
+          <div class="sub">Gaming</div>
+        </div>
+      </div>
+    </div>
+    <div class="option" style="--optionBackground:url(https://lh3.googleusercontent.com/pw/AIL4fc8UyIrlr6-0cAwfxcqkG18pYzW4H3gUcjyeQBjXZQLMu25OE1sG8rbyfHYzzTO6tvFnXxkyrbT9BEPhfRV0-Drv4ufNdQienjL5vjsfe8kJf9Vxi-cTM2IZwK_q4Gdw42tg_7uqHZD99FckNYPE7WGUkEQBjAd7Mc4mhrqXTCpquMPKCbZrRVPVq8_bQmPrdpUdnKqr8PNJhHiB8SAX6cMISm_G6h8lxQqRFsYQ6L9BNjEBvWrBHKBxt8HoXnQg4Vpx687CDkgulacQmWNeKwwzYrCxPfBpb5cGSo473NBDBJbH-dHCTRkDU-lhHWyG1TFhVMmjTMdmJK4XBGY2hO9EueoO0c73VmLhADzSclh7-pMcINjCfQS8ZTK2B7j4pJdUnFMYkPJV1MAEPsMR0ezj0vKMKxnlzY6RjGJa2oCelKIX_s6mPYwMLANWXr4_pTQeCsaJFTlzOpd1uuYaHLierm29T57CYxKO46WK0fiGJpBNYvB_gQvwFZ89-9Ab2JlSmbaxj874FjeOMyz_JcfA0leNeAeF_LMYWx_jIGdJ42W0CQEOcENZafwgeWfCO-Kq-XsaOyFiSrKF-D7euDwNFfvClZq0OI4C3BdP91GT9HFYWjNVcfpFf6gW7pOyjKq-U8uFtNsXYIRUS-EFCHoucwnCuTFXfVR7--4ybRrLt-7wDPaTh2zkpA-Rm3SDfe7Wmnc5HdZiSZGj0rySBaU948IvmCtWPyY-OjpwVP9WaYUq2iuenzhwjpLzTXkggeaJSkjpcIAbHqdP4BV9uu6HtNgy5uHrYOLgKL7NtoxKZHC93H_vOmoePMM7lQJcDu3CPiG_8tSRpLu-6-E_jrqAV2LIUDmy6uva56jC9xCsdHEnYAR9p4wZigexGxh207-D0wrboQcvGONUazkmBH354bZc0IHkuI75Qm9yvFoolAl1vtV-_61inSb7=w500-h667-s-no?authuser=2);">
+      <div class="shadow"></div>
+      <div class="label">
+        <div class="icon">
+          <i class="fa-solid fa-truck-monster"></i>
+        </div>
+        <div class="info">
+          <div class="sub">Offroading</div>
+        </div>
+      </div>
+    </div>
+    <div class="option" style="--optionBackground:url(https://lh3.googleusercontent.com/pw/AIL4fc9ZPiB8v92RDFvXRLJq7krSzvm8b2pHMli-3Nx6-Wkgr_3gX37b-f_Jf1OZ8w0BgNQoiejPcv8fNTcKxd1iEnzA6D41HIwB8pjtmrJrvvxemjc4m62BqQS7Ecrj5W6lf6lvE5u8IGWVb5AETmbylg00YwNNJgiXOffrKxNaCBp3bib9oPdiWoOPS9mU2ZDzZqWZQ9zBegmlHMI9kJI0orTgMdDIcgSG-o_tFiA6l5L_cISN--PTjnELc0xp20hMlbWMLJX0f4K-4MOS2btpJe1S69zJHW8EwsX_6AaDPoxoLdL2o-oTK5FIqcc-XUuD78lKxz4LRwtBUrvORdO9JOYCfpC2eH_fJmW3GgvlrrNGoGIb354T_fanw14Hx5kMWplAaaV_6q63Nn9kuIp0DABsedwwBXR0sV_5Iul6VG0spbG6mnNjWBYBM3RXIjNISVQ4pfax1_zt7Yly6qNYkv1JOFGKxfPIZio1XxxCxFF30lwwgA4lLfswu2W8ezTRSy8FX7QotHPQwncRgDE80CY-xNam1qT3k4VsQ6ULh2OGZqiDH4-GcuWCeBKpCiwsBOHfy7OrfQ6KJPNrHZTKWPrJGGOWks33ivbgXIzUWlZG-B6DQPUsX2YvSzJvAYQgmWMFdSgjSWfzB5V7vR9gqeFjCZN38TRCTaFWq6uljZRZO6JSnL27INOgoAfGBSsFjwRqk25UvoYokbhfvQfmV7_81AhZOVfJMnNDPRrst6cSWQFJuB4Dfv5ymjDbfKCHlSV3IpiVCBImqfiUryX6dLjOYJUzWsY2XfVgj-XgDSjCTC6gpplGWzk4CT0qt1ZbtXdjw7MwREg6Tc20BpUtZqNJh6hQmg_mUDNrFEexsOELKoFmvaz6coWdeZHxMCwsit1HZ8bwWGqcGmQSfc1v7AnPPq1qHM_RpzQBLL-1sXt95N1iafzvxNb6zwsF=w500-h667-s-no?authuser=2);">
+      <div class="shadow"></div>
+      <div class="label">
+        <div class="icon">
+          <i class="fa-solid fa-music"></i>
+        </div>
+        <div class="info">
+          <div class="sub">Music</div>
+        </div>
+      </div>
+    </div>
+  </div>
+<spotify/>
+<!--  expander end-->
 </template>
-
 <script setup lang="ts">
-import {useLastfm} from "../Composables/use-lastfm";
-import moment from "moment";
+import '../assets/expander.scss';
+import { onMounted, onUnmounted } from 'vue';
 
-const {tracks} = useLastfm();
+const optionClickHandler = (event) => {
+  const clickedOption = event.target;
+  const options = document.querySelectorAll('.option');
 
-function computeTimeElapsed({lastPlayedTimestamp}: { lastPlayedTimestamp: any }) {
-  return moment(lastPlayedTimestamp, 'DD MMM YYYY, HH:mm').add(8, 'hours').fromNow();
-}
-function getimgURL(track: any): string {
-  return track.image.find((image: any) => image.size === 'extralarge')?.['#text'] || '';
-}
+  options.forEach((option) => {
+    option.classList.remove('active');
+  });
+
+  clickedOption.classList.add('active');
+};
+
+onMounted(() => {
+  document.addEventListener('click', optionClickHandler);
+});
+
+onUnmounted(() => {
+  document.removeEventListener('click', optionClickHandler);
+});
 
 
 </script>
 
 <style scoped>
-.e68_100 {
-  width: 282px;
-  height: 76px;
-}
-
-.e68_98 {
-  background-color: rgba(24.000000469386578, 24.000000469386578, 24.000000469386578, 1);
-  width: 282px;
-  height: 76px;
-  position: absolute;
-  border-radius: 14px;
-}
-
-.e41_98 {
-  width: 67px;
-  height: 65px;
-  position: absolute;
-  left: 6px;
-  top: 5px;
-}
-
-.e68_99 {
-  color: rgba(255, 255, 255, 1);
-  font-size: 15px;
-  position: absolute;
-  left: 87px;
-  top: 9px;
-  text-align: left;
-  letter-spacing: 0;
-}
-
-.carousel {
-  margin-top: 100px;
-  margin-left: 40px
-}
-
-
-.playlistt {
-  margin: 20px;
-}
-
-.images {
-  overflow: hidden;
-}
-
-.images-inner {
-  width: 500%;
-  transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
-  transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
-}
-
-.image-slide {
-  width: 20%;
-  float: left;
-}
-
-.image-slide,
-.fake-radio,
-.radio-btn {
-  transition: all 0.5s ease-out;
-}
-
-.fake-radio {
-  float: right;
-}
-
-/* Move slides overflowed container */
-#slide1:checked ~ .images .images-inner {
-  margin-left: 0;
-}
-
-#slide2:checked ~ .images .images-inner {
-  margin-left: -100%;
-}
-
-#slide3:checked ~ .images .images-inner {
-  margin-left: -200%;
-}
-
-
-/* Color of bullets */
-#slide1:checked ~ div .fake-radio .radio-btn:nth-child(1),
-#slide2:checked ~ div .fake-radio .radio-btn:nth-child(2),
-#slide3:checked ~ div .fake-radio .radio-btn:nth-child(3) {
-  background: red;
-}
-
-.radio-btn {
-  width: 9px;
-  height: 9px;
-  border-radius: 5px;
-  background: gray;
-  display: inline-block !important;
-  margin: 0 1px;
-  cursor: pointer;
-}
-
-/* Color of bullets - END */
-
-
-/* Calculate AUTOPLAY for BULLETS */
-@keyframes bullet {
-  0%, 33.32333333333334% {
-    background: red;
-  }
-  33.333333333333336%, 100% {
-    background: gray;
-  }
-}
-
-
-#play1:checked ~ div .fake-radio .radio-btn:nth-child(1) {
-  animation: bullet 12300ms infinite -1000ms;
-}
-
-#play1:checked ~ div .fake-radio .radio-btn:nth-child(2) {
-  animation: bullet 12300ms infinite 3100ms;
-}
-
-#play1:checked ~ div .fake-radio .radio-btn:nth-child(3) {
-  animation: bullet 12300ms infinite 7200ms;
-}
-
-/* Calculate AUTOPLAY for BULLETS - END */
-
-
-/* Calculate AUTOPLAY for SLIDES */
-@keyframes slide {
-  0%, 25.203252032520325% {
-    margin-left: 0;
-  }
-  33.333333333333336%, 58.53658536585366% {
-    margin-left: -100%;
-  }
-  66.66666666666667%, 91.869918699187% {
-    margin-left: -200%;
-  }
-}
-
-
-.st-slider > #play1:checked ~ .images .images-inner {
-  animation: slide 12300ms infinite;
-}
-
-/* Calculate AUTOPLAY for SLIDES - END */
-
-
-/* Calculate AUTOPLAY for CAPTION */
-@keyframes caption {
-  0%, 33.32333333333334% {
-    opacity: 1;
-  }
-  33.333333333333336%, 100% {
-    opacity: 0;
-  }
-}
-
-/* Calculate AUTOPLAY for CAPTION - END */
-
-
 .title {
   float: left;
   margin-left: 5%;
@@ -265,66 +102,7 @@ function getimgURL(track: any): string {
   -webkit-text-stroke-color: white;
   -webkit-text-fill-color: transparent;
 }
-
 .inter {
   font-family: "Inter Black",serif;
-}
-
-.container {
-  margin-left: 20px;
-}
-
-section.recent-tracks {
-  flex-direction: column;
-  margin-right: 50px;
-}
-
-section.recent-tracks .recent-track {
-  display: grid;
-  grid-column-gap: 10px;
-  grid-template-columns: 50px repeat(4, minmax(0, 1fr)) 100px;
-  font-size: 15px;
-  align-items: center;
-  padding: 5px 0;
-  width: 550px;
-}
-
-section.recent-tracks .recent-track .recent-track-image {
-  width: 50px;
-  height: 50px;
-}
-
-.recent-track-image {
-  border-radius: 5px;
-}
-
-section.recent-tracks .recent-track .recent-track-name {
-  font-weight: bold;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-section.recent-tracks .recent-track .recent-track-artist,
-section.recent-tracks .recent-track .recent-track-album,
-section.recent-tracks .recent-track .recent-track-number {
-  display: flex;
-  justify-content: center;
-}
-
-section.recent-tracks .recent-track .recent-track-date {
-  display: flex;
-  justify-content: flex-end;
-  color: #B7B7B7;
-  font-size: 14px;
-}
-
-.recentracks {
-  background-color: #2c3e50;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.recent-track-title {
-
 }
 </style>
