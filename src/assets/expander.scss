@@ -35,7 +35,7 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
       margin:10px;
       //border:0px solid --defaultColor;
 
-      background:var(--optionBackground, var(--defaultBackground, #E6E9ED));
+      background:var(--optionBackground);
       background-size:auto 120%;
       background-position:center;
 
