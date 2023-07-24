@@ -144,19 +144,19 @@ onUnmounted(() => {
   transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
 }
 .biking{
-  background: url(src/assets/interest/biking.jpg);
+  background: url(/src/assets/interest/biking.jpg);
 }
 .code{
-  background: url(src/assets/interest/code.jpg);
+  background: url(/src/assets/interest/code.jpg);
 }
 .game{
-  background: url(src/assets/interest/gaming.jpg);
+  background: url(/src/assets/interest/gaming.jpg);
 }
 .offroad{
-  background: url(src/assets/interest/offroading.jpg);
+  background: url(/src/assets/interest/offroading.jpg);
 }
 .music{
-  background: url(src/assets/interest/music.jpg);
+  background: url(/src/assets/interest/music.jpg);
 }
 .options .option.active {
   flex-grow: 10000;
