@@ -58,13 +58,11 @@
       </div>
     </div>
   </div>
-<spotify/>
 <!--  expander end-->
 </template>
 <script setup lang="ts">
 import '../assets/expander.scss';
 import { onMounted, onUnmounted } from 'vue';
-import Spotify from "@/components/spotify.vue";
 
 const optionClickHandler = (event) => {
   const clickedOption = event.target;
