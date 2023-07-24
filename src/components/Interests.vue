@@ -2,7 +2,7 @@
   <h1 class="title fixed-top inter">SOME OF <span class="outlinetext">MY INTERESTS</span></h1>
 <!--  expander-->
   <div class="options">
-    <div class="option active" style="--optionBackground:url(https://lh3.googleusercontent.com/pw/AIL4fc_-nm0Wc6ThALLPZ7Hc3rT4KAoVJdQmnCgFBuDQNTQlWQrzmww4MI0X8Wr-wEAfniv6OyG28qGaOlDedcF-j39EAA8u4ZabJLojUzzWJh-hqRklszzyeDV5Xs70cCa863-h9yaS51lWbIsb4W0T0H9P2Z-JmWm-Fq3n6ZkbfUGquslg244K6dXBVWm-v0BqNvy4-6ZIfu7ISBA2807Hn2iRUKR7xlURlwsA6BdA2BDSQQS3zj5nx9NuTfhNkD6g0BBqSo_eOt3MoobEGyDYuNl7JofDwqWr-28Nyxtf4D9NrrO8cFI5jj7-vRyVjR-AkzDAn0xslq7bLwhqFymhMbB2bXkx5FQC1vueuDDf88HZ-5uXY_CYSsst4mzHK_9rYNp1H7TcpyIBcoStqlxsqE8hWdb_i41dKCIZlTXwGQkI_ukOGcl03nizH5ti7sXBx9nfppiHWcnm9XfWUY7aAOOUqZDD7ylEVjsRUTFNZ-5omH3_wy8CaEhjuU-opfwVD0_qXEiipFZcKWx8hvkRfQhThxk12mcbH79XSnJY9MjGDGwYooW17ibcjk_tseLpAlSt8RsrqaMDErosrvo8cXCHvaPUA_GjBfeUTrI8TothQnP7QWLKdTt11LeQ7Ym18WuMriWPTk4p0VMWtez9eXWd8KLM7zjUwhDF0Xi-DSs1Ec9-u6TyfHYEQFpR3C_mGo5FPtBkZxwDayA4knH6VnOyrleuaxD89o8ZutvPMXsPLJGu2cwlkz9aRNGgXzOf4QWXMROfCL65MI9huVujmR6bE3T6iQv48gLQvPlQyBeQIljeG2B1-Wu43LGQvQL2645p0loTTk0D6Nmp3bNjiN9oUbpVmF1mlzSgZkDi-tqJXP2i0fCofF7ahj_ksK8plQ1lE3sYWr1h2W4GPKU69eoX1mGS67aWLJywjTGIROlAlwaYJftFAhx5e-VfkQ=w534-h667-s-no?authuser=2);">
+    <div class="option active" style="--optionBackground: url(../assets/interest/biking.jpg); ">
       <div class="shadow"></div>
       <div class="label">
         <div class="icon">
