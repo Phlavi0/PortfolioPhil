@@ -2,7 +2,7 @@
   <h1 class="title fixed-top inter">SOME OF <span class="outlinetext">MY INTERESTS</span></h1>
 <!--  expander-->
   <div class="options">
-    <div class="option active" style="--optionBackground: url(src/assets/interest/biking.jpg); ">
+    <div class="option active" style="--optionBackground: url('https://github.com/Phlavi0/PortfolioPhil/blob/6a08a29fe5da45fc468f164cf3ce43eae8c83759/src/assets/interest/biking.jpg'); ">
       <div class="shadow"></div>
       <div class="label">
         <div class="icon">
