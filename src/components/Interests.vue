@@ -2,7 +2,7 @@
   <h1 class="title fixed-top inter">SOME OF <span class="outlinetext">MY INTERESTS</span></h1>
 <!--  expander-->
   <div class="options">
-    <div class="option active" style="--optionBackground: url(src/assets/interest/biking.jpg); ">
+    <div class="option active biking">
       <div class="shadow"></div>
       <div class="label">
         <div class="info">
@@ -10,7 +10,7 @@
         </div>
       </div>
     </div>
-    <div class="option" style="--optionBackground:url(src/assets/interest/code.jpg);">
+    <div class="option code">
       <div class="shadow"></div>
       <div class="label">
         <div class="info">
@@ -18,7 +18,7 @@
         </div>
       </div>
     </div>
-    <div class="option" style="--optionBackground:url(src/assets/interest/gaming.jpg);">
+    <div class="option game">
       <div class="shadow"></div>
       <div class="label">
         <div class="info">
@@ -26,7 +26,7 @@
         </div>
       </div>
     </div>
-    <div class="option" style="--optionBackground:url(src/assets/interest/offroading.jpg);">
+    <div class="option offroad">
       <div class="shadow"></div>
       <div class="label">
         <div class="info">
@@ -34,7 +34,7 @@
         </div>
       </div>
     </div>
-    <div class="option" style="--optionBackground:url(src/assets/interest/music.jpg);">
+    <div class="option music">
       <div class="shadow"></div>
       <div class="label">
         <div class="info">
@@ -138,11 +138,25 @@ onUnmounted(() => {
   overflow: hidden;
   min-width: 60px;
   margin: 10px;
-  background: var(--optionBackground);
   background-size: auto 120%;
   background-position: center;
   cursor: pointer;
   transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+.biking{
+  background: url(src/assets/interest/biking.jpg);
+}
+.code{
+  background: url(src/assets/interest/code.jpg);
+}
+.game{
+  background: url(src/assets/interest/gaming.jpg);
+}
+.offroad{
+  background: url(src/assets/interest/offroading.jpg);
+}
+.music{
+  background: url(src/assets/interest/music.jpg);
 }
 .options .option.active {
   flex-grow: 10000;
