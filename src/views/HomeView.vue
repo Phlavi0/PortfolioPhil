@@ -6,6 +6,7 @@ import Interests from "../components/Interests.vue";
 import Contact from "../components/Contact.vue";
 import {ref} from "vue";
 import Spotify from "@/components/spotify.vue";
+import Recenttracks from "@/components/recenttracks.vue";
 
 const isDropdownOpen = ref(false);
 const isSubmenuOpen = ref(false);
@@ -103,95 +104,15 @@ function toggleSubmenu() {
             <span aria-hidden="true">&times;</span>
           </button>
         </div><!-- /.modal-header -->
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-lg-10 col-lg-offset-1">
-              <h2>Experience</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 col-lg-2 col-lg-offset-1">
-              <p class="year">2023</p>
-            </div>
-            <div class="col-md-9 col-lg-8">
-              <h4>Web Dev Intern</h4>
-              <p><strong>Miller Solutions Development</strong></p>
-              <p class="mb-0">Trained for most of our time learning about Vue3, TypeScript and applying APIs.
-                Learning about UI/UX design from a specialist at Miller and were then given the task of creating a
-                UI/UX solution for a client's web application.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 col-lg-2 col-lg-offset-1">
-              <p class="year">2018</p>
-            </div>
-            <div class="col-md-9 col-lg-8">
-              <h4>On the Job Training</h4>
-              <p><strong>City Engineer's Office</strong></p>
-              <p class="mb-0">On my senior HS training where I learned how to use Computer-aided Design or CAD,
-                and how to survey land. There was also team building exercises with my peers.  </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 col-lg-2 col-lg-offset-1">
-              <p class="year">2010 - 2017</p>
-            </div>
-            <div class="col-md-9 col-lg-8">
-              <h4>Assistant Manager</h4>
-              <p><strong>Mt. Carmel Spring Purified Water and Coca-Cola Distributor</strong></p>
-              <p class="mb-0">A family-owned drinking water and Coca-Cola distribution business in
-                Bayawan City wherein I am tasked to organize reports of transactions and supplies, check deliveries,
-                check inventory, and also I was in charge of handling cash transactions with customers and employees.
-                I also sometimes deliver them myself.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-lg-5 col-lg-offset-1">
-              <div class="row">
-                <div class="col-xs-12">
-                  <h2>Education</h2>
-                </div>
-              </div>
-              <div class="row mb-15">
-                <div class="col-sm-3 col-md-4">
-                  <p class="year">2019 - 2023</p>
-                </div>
-                <div class="col-sm-9 col-md-8">
-                  <p class="mb-0"><strong>Bachelor of Science In Information Technology</strong></p>
-                  <p>Silliman University</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-5">
-              <div class="row">
-                <div class="col-xs-12">
-                  <h2>Skills</h2>
-                </div>
-              </div>
-              <div class="row">
-                <ul>
-                  <li><strong>Web:</strong> Laravel, Vue3, PHP, TS, Bootstrap</li>
-                  <li><strong>UX/UI Tools:</strong> Figma, Canva</li>
-                  <li><strong>Adobe CC:</strong> Photoshop</li>
-                  <li><strong>Other:</strong> APIs, C, C++, C#, Java</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <embed src="src/assets/PHILIP AUGUSTINE CADUNGOG.pdf"
+               frameborder="0" width="100%" height="500px">
           <div class="row text-center">
-            <a class="btn td-btn outline green mb-30"
-               href="https://github.com/Phlavi0/PortfolioPhil/blob/master/src/assets/PHILIP%20AUGUSTINE%20CADUNGOG.pdf"
-               target="_blank" download><span class="glyphicon glyphicon-download-alt"></span> Download PDF</a>
             <a class="btn td-btn outline green iconBtn mb-30" href="https://www.linkedin.com/in/philip-augustine-cadungog-823777262"
                target="_blank"><span class="glyphicon glyphicon-user"></span> View LinkedIn Profile</a>
-          </div>
-          <div class="modal-footer center">
-            <button type="button" class="btn td-btn outline small" data-bs-dismiss="modal">Close Resume</button>
           </div><!-- /.modal-footer -->
         </div><!-- /.modal-body -->
       </div><!-- /.modal-content -->
     </div>
-  </div>
   <div class="animateme">
     <ul class="bg-bubbles">
       <li></li>
@@ -212,13 +133,14 @@ function toggleSubmenu() {
 
 </template>
 <style scoped>
+
 input + label {
   position: fixed;
-  top: 40px;
+  top: 20px;
   right: 40px;
   height: 20px;
   width: 15px;
-  z-index: 5;
+  z-index: 6;
 }
 input + label span {
   position: absolute;
@@ -253,6 +175,7 @@ input:checked + label span:last-child {
   transform: rotate(-405deg);
 }
 input ~ nav {
+  z-index: 5;
   overflow: hidden;
 }
 input ~ nav > ul > li {
@@ -307,12 +230,6 @@ footer {
   text-transform: uppercase;
   letter-spacing: 0.33rem;
   padding-left: 7%;
-}
-
-.pad {
-  margin-top: 35%;
-  margin-right: 15%;
-  text-align: right;
 }
 
 .animateme {

@@ -122,8 +122,6 @@
 
 }
 .post-text{
-  background-color: darkslategrey;
-  border-radius: 10px;
   padding: 10px;
 }
 
