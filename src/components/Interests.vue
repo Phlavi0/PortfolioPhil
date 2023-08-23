@@ -1,6 +1,6 @@
 <template>
   <h1 class="title fixed-top inter">SOME OF <span class="outlinetext">MY INTERESTS</span></h1>
-    <ul style="padding: 150px; border-radius:20px;">
+    <ul>
       <li
           v-for="(artist, i) in artists"
           :style="`background-image: url(${artist.backgroundUrl});`"
@@ -28,23 +28,23 @@ const active = ref(0);
 const artists = [
   {
     name: "Mountain Biking sa bukid",
-    backgroundUrl: "/src/assets/interest/biking.jpg"
+    backgroundUrl: "../src/assets/interest/biking.jpg"
   },
   {
     name: "Coding sa beach",
-    backgroundUrl: "/src/assets/interest/code.jpg"
+    backgroundUrl: "../src/assets/interest/code.jpg"
   },
   {
     name: "Gaming sa Office",
-    backgroundUrl: "/src/assets/interest/gaming.jpg"
+    backgroundUrl: "../src/assets/interest/gaming.jpg"
   },
   {
     name: "Offroading sa road",
-    backgroundUrl: "/src/assets/interest/offroading.jpg"
+    backgroundUrl: "../src/assets/interest/offroading.jpg"
   },
   {
     name: "Gigs sa silingan",
-    backgroundUrl: "/src/assets/interest/music.jpg"
+    backgroundUrl: "../src/assets/interest/music.jpg"
   }
 ];
 </script>
@@ -89,6 +89,13 @@ ul {
 
   @media only screen and (min-width: 1280px) {
     flex-direction: row;
+    padding: 130px;
+  }
+  @media only screen and (min-width: 768px) {
+    margin-top: 70px;
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
   }
 }
 
@@ -130,9 +137,11 @@ h2 {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-
-  @media only screen and (min-width: 768px) {
+  @media screen and (max-width: 767px) {
     font-size: 20px;
+  }
+  @media only screen and (min-width: 768px) {
+    font-size: 30px;
     line-height: 48px;
   }
 
