@@ -1,77 +1,55 @@
 <template>
   <h1 class="title fixed-top inter">SOME OF <span class="outlinetext">MY INTERESTS</span></h1>
-<!--  expander-->
-  <div class="options">
-    <div class="option active biking">
-      <div class="shadow"></div>
-      <div class="label">
-        <div class="info">
-          <div class="sub">Mountain Biking</div>
+    <ul style="padding: 150px; border-radius:20px;">
+      <li
+          v-for="(artist, i) in artists"
+          :style="`background-image: url(${artist.backgroundUrl});`"
+          role="button"
+          :class="active === i ? 'active' : ''"
+          @click="() => (active = i)"
+      >
+        <h3>{{ artist.name }}</h3>
+        <div class="section-content">
+          <div class="inner">
+            <div class="bio">
+              <h2>{{ artist.name }}</h2>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="option code">
-      <div class="shadow"></div>
-      <div class="label">
-        <div class="info">
-          <div class="sub">Coding</div>
-        </div>
-      </div>
-    </div>
-    <div class="option game">
-      <div class="shadow"></div>
-      <div class="label">
-        <div class="info">
-          <div class="sub">Gaming</div>
-        </div>
-      </div>
-    </div>
-    <div class="option offroad">
-      <div class="shadow"></div>
-      <div class="label">
-        <div class="info">
-          <div class="sub">Offroading</div>
-        </div>
-      </div>
-    </div>
-    <div class="option music">
-      <div class="shadow"></div>
-      <div class="label">
-        <div class="info">
-          <div class="sub">Music</div>
-        </div>
-      </div>
-    </div>
-  </div>
-<!--  expander end-->
+      </li>
+    </ul>
+
 </template>
 <script setup lang="ts">
 //import '../assets/expander.scss';
-import { onMounted, onUnmounted } from 'vue';
+import { ref } from 'vue';
 
-const optionClickHandler = (event) => {
-  const clickedOption = event.target;
-  const options = document.querySelectorAll('.option');
-
-  options.forEach((option) => {
-    option.classList.remove('active');
-  });
-
-  clickedOption.classList.add('active');
-};
-
-onMounted(() => {
-  document.addEventListener('click', optionClickHandler);
-});
-
-onUnmounted(() => {
-  document.removeEventListener('click', optionClickHandler);
-});
-
-
+const active = ref(0);
+const artists = [
+  {
+    name: "Mountain Biking sa bukid",
+    backgroundUrl: "/src/assets/interest/biking.jpg"
+  },
+  {
+    name: "Coding sa beach",
+    backgroundUrl: "/src/assets/interest/code.jpg"
+  },
+  {
+    name: "Gaming sa Office",
+    backgroundUrl: "/src/assets/interest/gaming.jpg"
+  },
+  {
+    name: "Offroading sa road",
+    backgroundUrl: "/src/assets/interest/offroading.jpg"
+  },
+  {
+    name: "Gigs sa silingan",
+    backgroundUrl: "/src/assets/interest/music.jpg"
+  }
+];
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .title {
   float: left;
   margin-left: 5%;
@@ -90,144 +68,157 @@ onUnmounted(() => {
   font-family: "Inter Black",serif;
 }
 
-.options {
-  margin-top: 100px;
+.bio {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: min-content;
+  grid-gap: 24px;
+}
+
+ul {
   display: flex;
-  flex-direction: row;
-  align-items: stretch;
+  min-height: 750px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
-  min-width: 600px;
-  max-width: 900px;
-  width: calc(100% - 100px);
-  height: 400px;
-}
-@media screen and (max-width: 718px) {
-  .options {
-    min-width: 520px;
-  }
-  .options .option:nth-child(5) {
-    display: none;
-  }
-}
-@media screen and (max-width: 638px) {
-  .options {
-    min-width: 440px;
-  }
-  .options .option:nth-child(4) {
-    display: none;
-  }
-}
-@media screen and (max-width: 558px) {
-  .options {
-    min-width: 360px;
-  }
-  .options .option:nth-child(3) {
-    display: none;
-  }
-}
-@media screen and (max-width: 478px) {
-  .options {
-    min-width: 280px;
-  }
-  .options .option:nth-child(2) {
-    display: none;
-  }
-}
-.options .option {
-  position: relative;
-  overflow: hidden;
-  min-width: 60px;
-  margin: 10px;
-  background-size: auto 120%;
-  background-position: center;
-  cursor: pointer;
-  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-}
-.biking{
-  background: url(/src/assets/interest/biking.jpg);
-}
-.code{
-  background: url(/src/assets/interest/code.jpg);
-}
-.game{
-  background: url(/src/assets/interest/gaming.jpg);
-}
-.offroad{
-  background: url(/src/assets/interest/offroading.jpg);
-}
-.music{
-  background: url(/src/assets/interest/music.jpg);
-}
-.options .option.active {
-  flex-grow: 10000;
-  transform: scale(1);
-  max-width: 600px;
-  border-radius: 20px;
-  background-size: auto 100%;
-  /*&:active {
-     transform:scale(0.9);
-  }*/
-}
-.options .option.active .shadow {
-  box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
-}
-.options .option.active .label {
-  bottom: 20px;
-  left: 20px;
-}
-.options .option.active .label .info > div {
-  opacity: 1;
-}
-.options .option:not(.active) {
-  flex-grow: 1;
-  border-radius: 10px;
-}
-.options .option:not(.active) .label {
-  bottom: 10px;
-  left: 10px;
-}
-.options .option:not(.active) .label .info > div {
-  left: 20px;
-  opacity: 0;
-}
-.options .option .shadow {
-  position: absolute;
-  height: 120px;
-  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-}
-.options .option .label {
-  display: flex;
-  position: absolute;
-  height: 40px;
-  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-}
-.options .option .label{
-  margin-left: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  min-width: 40px;
-  max-width: 40px;
-  height: 40px;
-}
-.options .option .label .info {
-  display: flex;
+  list-style-type: none;
+  width: 100%;
+  min-width: 100%;
   flex-direction: column;
-  justify-content: center;
-  margin-left: 10px;
-  color: white;
-  white-space: pre;
+
+  @media only screen and (min-width: 1280px) {
+    flex-direction: row;
+  }
 }
-.options .option .label .info > div {
+
+li {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  cursor: pointer;
+  transition: all 0.35s ease;
   position: relative;
-  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 15, 15, 0.75);
+  }
+
+  &.active {
+    flex: 6;
+    cursor: default;
+
+    &:before {
+      background: linear-gradient(180deg, rgba(15, 15, 15, 0) 0%, #111111 100%);
+    }
+  }
 }
-.options .option .label .info{
+
+h2 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 48px;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 48px;
+  }
+}
+
+h3 {
   font-weight: bold;
-  font-size: 1.2rem;
+  white-space: nowrap;
+  position: absolute;
+  z-index: 30;
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  transition: top 0.35s, opacity 0.15s;
+  transform-origin: 0 0;
+  font-size: 15px;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%) rotate(0deg);
+
+  @media only screen and (min-width: 1280px) {
+    top: 100%;
+    left: 50%;
+    font-size: 20px;
+    transform: translate(-20px, -50%) rotate(-90deg);
+  }
+
+  .active & {
+    opacity: 0;
+    top: 200%;
+  }
 }
-.options .option .label .info .sub {
-  transition-delay: 0.1s;
+
+.section-content {
+  position: relative;
+  z-index: 30;
+  opacity: 0;
+  align-self: flex-end;
+  width: 100%;
+  transition: all 0.35s 0.1s ease-out;
+
+  .active & {
+    opacity: 1;
+  }
+
+  .inner {
+    position: absolute;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    align-items: flex-end;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.25s ease-out;
+
+    @media only screen and (min-width: 768px) {
+      grid-auto-flow: column;
+      grid-template-columns: calc(100% - 340px) 300px;
+      grid-column-gap: 40px;
+      padding: 40px;
+    }
+
+    @media only screen and (min-width: 1280px) {
+      grid-auto-flow: column;
+      grid-template-columns: 460px 200px;
+      grid-column-gap: 40px;
+      padding: 40px;
+    }
+
+    .active & {
+      opacity: 1;
+    }
+  }
+}
+
+.artist-profile-link {
+  pointer-events: none;
+
+  .active & {
+    pointer-events: all;
+  }
 }
 </style>

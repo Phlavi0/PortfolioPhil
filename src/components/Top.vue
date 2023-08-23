@@ -1,5 +1,5 @@
 <template>
-    <span  class="e13_6">PHILIP CADUNGOG</span>
+    <span  class="e13_6 ">PHILIP CADUNGOG</span>
         <img src="/src/assets/centerpic.jpg" class="ei100_37_38_3" alt="">
     <span  class="e13_5">PHILIP CADUNGOG</span>
 </template>
@@ -57,5 +57,4 @@ countapi.visits().then((result) => {
   -webkit-text-stroke-color: white;
   -webkit-text-fill-color: transparent;
 }
-
 </style>
