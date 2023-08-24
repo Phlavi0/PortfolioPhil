@@ -4,9 +4,8 @@
       <li
           v-for="(artist, i) in artists"
           :style="`background-image: url(${artist.backgroundUrl});`"
-          role="button"
           :class="active === i ? 'active' : ''"
-          @click="() => (active = i)" alt=""
+          @click="() => (active = i)"
       >
         <h3>{{ artist.name }}</h3>
         <div class="section-content">
@@ -28,23 +27,23 @@ const active = ref(0);
 const artists = [
   {
     name: "Mountain Biking sa bukid",
-    backgroundUrl: "'/src/assets/interest/biking.jpg'"
+    backgroundUrl: "/src/assets/centerpic.jpg"
   },
   {
     name: "Coding sa beach",
-    backgroundUrl: "'/src/assets/interest/code.jpg'"
+    backgroundUrl: "/src/assets/interest/code.jpg"
   },
   {
     name: "Gaming sa Office",
-    backgroundUrl: "'/src/assets/interest/gaming.jpg'"
+    backgroundUrl: "/src/assets/interest/gaming.jpg"
   },
   {
     name: "Offroading sa road",
-    backgroundUrl: "'/src/assets/interest/offroading.jpg'"
+    backgroundUrl: "/src/assets/interest/offroading.jpg"
   },
   {
     name: "Gigs sa silingan",
-    backgroundUrl: "'/src/assets/interest/music.jpg'"
+    backgroundUrl: "/src/assets/interest/music.jpg"
   }
 ];
 </script>
