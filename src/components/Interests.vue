@@ -6,7 +6,7 @@
           :style="`background-image: url(${artist.backgroundUrl});`"
           role="button"
           :class="active === i ? 'active' : ''"
-          @click="() => (active = i)"
+          @click="() => (active = i)" alt=""
       >
         <h3>{{ artist.name }}</h3>
         <div class="section-content">
