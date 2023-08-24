@@ -1,23 +1,22 @@
 <template>
   <h1 class="title fixed-top inter">SOME OF <span class="outlinetext">MY INTERESTS</span></h1>
-    <ul>
-      <li
-          v-for="(artist, i) in artists"
-          :style="`background-image: url(${artist.backgroundUrl});`"
-          :class="active === i ? 'active' : ''"
-          @click="() => (active = i)"
-      >
-        <h3>{{ artist.name }}</h3>
-        <div class="section-content">
-          <div class="inner">
-            <div class="bio">
-              <h2>{{ artist.name }}</h2>
-            </div>
+  <ul>
+    <li
+        v-for="(artist, i) in artists"
+        :style="{ backgroundImage: `url(${artist.backgroundUrl})` }"
+        :class="active === i ? 'active' : ''"
+        @click="() => (active = i)"
+    >
+      <h3>{{ artist.name }}</h3>
+      <div class="section-content">
+        <div class="inner">
+          <div class="bio">
+            <h2>{{ artist.name }}</h2>
           </div>
         </div>
-      </li>
-    </ul>
-
+      </div>
+    </li>
+  </ul>
 </template>
 <script setup lang="ts">
 //import '../assets/expander.scss';
@@ -27,7 +26,7 @@ const active = ref(0);
 const artists = [
   {
     name: "Mountain Biking sa bukid",
-    backgroundUrl: "/src/assets/centerpic.jpg"
+    backgroundUrl: "/src/assets/interest/biking.jpg"
   },
   {
     name: "Coding sa beach",
