@@ -3,7 +3,7 @@
   <ul>
     <li
         v-for="(artist, i) in artists"
-        :style="{ backgroundImage: `url${artist.backgroundUrl}` }"
+        :style="{ backgroundImage: `url(${(artist.backgroundUrl)})` }"
         :class="active === i ? 'active' : ''"
         @click="() => (active = i)"
     >
@@ -25,23 +25,23 @@ const active = ref(0);
 const artists = [
   {
     name: "Mountain Biking sa bukid",
-    backgroundUrl: "(/src/assets/interest/biking.jpg)"
+    backgroundUrl: "/src/assets/interest/biking.jpg"
   },
   {
     name: "Coding sa beach",
-    backgroundUrl: "(/src/assets/interest/code.jpg)"
+    backgroundUrl: "/src/assets/interest/code.jpg"
   },
   {
     name: "Gaming sa Office",
-    backgroundUrl: "(/src/assets/interest/gaming.jpg)"
+    backgroundUrl: "/src/assets/interest/gaming.jpg"
   },
   {
     name: "Offroading sa road",
-    backgroundUrl: "(/src/assets/interest/offroading.jpg)"
+    backgroundUrl: "/src/assets/interest/offroading.jpg"
   },
   {
     name: "Gigs sa silingan",
-    backgroundUrl: "(/src/assets/interest/music.jpg)"
+    backgroundUrl: "/src/assets/interest/music.jpg"
   }
 ];
 </script>
