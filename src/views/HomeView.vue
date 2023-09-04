@@ -1,10 +1,10 @@
 <script setup lang="ts">
+import {ref} from "vue";
 import Top from "../components/Top.vue";
 import Languages from "../components/Languages.vue";
 import Works from "../components/Works.vue";
 import Interests from "../components/Interests.vue";
 import Contact from "../components/Contact.vue";
-import {ref} from "vue";
 import Spotify from "@/components/spotify.vue";
 import Recenttracks from "@/components/recenttracks.vue";
 

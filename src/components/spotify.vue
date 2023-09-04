@@ -1,5 +1,4 @@
 <template>
-  <section>
     <div class="profiletag">
         <div class="e68_100">
           <div class="e68_98"></div>
@@ -52,7 +51,6 @@
         </tbody>
       </table>
     </div>
-  </section>
 </template>
 
 <script setup lang="ts">
