@@ -3,7 +3,7 @@
   <ul>
     <li
         v-for="(artist, i) in artists"
-        :style="`background-image: url('/src/assets/centerpic.jpg`"
+        v-bind:style="{ 'background-image': 'url(' + artist.backgroundUrl + ')' }"
         :class="active === i ? 'active' : ''"
         @click="() => (active = i)"
     >
