@@ -1,26 +1,3 @@
-<template>
-  <h1 class="title fixed-top inter">SOME OF <span class="outlinetext">MY INTERESTS</span></h1>
-  <div class="listU">
-    <div
-        class="listL"
-        v-for="(artist, i) in artists"
-        :key="i"
-        :style="{ backgroundImage: `url(${artist.backgroundUrl})` }"
-        :class="active === i ? 'active' : ''"
-        @click="active = i"
-    >
-      <h3>{{ artist.name }}</h3>
-      <div class="section-content">
-        <div class="inner">
-          <div class="bio">
-            <h2>{{ artist.name }}</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
-
 <script setup lang="ts">
 import { ref } from 'vue';
 
@@ -48,6 +25,30 @@ const artists = [
   }
 ];
 </script>
+<template>
+  <h1 class="title fixed-top inter">SOME OF <span class="outlinetext">MY INTERESTS</span></h1>
+  <div class="listU">
+    <div
+        class="listL"
+        v-for="(artist, i) in artists"
+        :key="i"
+        :style="{ backgroundImage: `url(${artist.backgroundUrl})` }"
+        :class="active === i ? 'active' : ''"
+        @click="active = i"
+    >
+      <h3>{{ artist.name }}</h3>
+      <div class="section-content">
+        <div class="inner">
+          <div class="bio">
+            <h2>{{ artist.name }}</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+
 
 
 <style scoped lang="scss">
