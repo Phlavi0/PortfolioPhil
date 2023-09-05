@@ -8,19 +8,19 @@ const artists = [
   },
   {
     name: "Coding sa beach",
-    backgroundUrl: 'src/assets/interest/code.jpg'
+    backgroundUrl: 'https://github.com/Phlavi0/PortfolioPhil/blob/master/src/assets/interest/code.jpg?raw=true'
   },
   {
     name: "Gaming sa Office",
-    backgroundUrl: 'src/assets/interest/gaming.jpg'
+    backgroundUrl: 'https://github.com/Phlavi0/PortfolioPhil/blob/master/src/assets/interest/gaming.jpg?raw=true'
   },
   {
     name: "Offroading sa road",
-    backgroundUrl: 'src/assets/interest/offroading.jpg'
+    backgroundUrl: 'https://github.com/Phlavi0/PortfolioPhil/blob/master/src/assets/interest/offroading.jpg?raw=true'
   },
   {
     name: "Gigs sa silingan",
-    backgroundUrl: 'src/assets/interest/music.jpg'
+    backgroundUrl: 'https://github.com/Phlavi0/PortfolioPhil/blob/master/src/assets/interest/music.jpg?raw=true'
   }
 ];
 </script>
