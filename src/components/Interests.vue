@@ -1,11 +1,13 @@
 <template>
   <h1 class="title fixed-top inter">SOME OF <span class="outlinetext">MY INTERESTS</span></h1>
   <div class="listU">
-    <div class="listL"
+    <div
+        class="listL"
         v-for="(artist, i) in artists"
-        :style="{ backgroundImage: 'url(' + artist.backgroundUrl + ')' }"
+        :key="i"
+        :style="{ backgroundImage: `url(${artist.backgroundUrl})` }"
         :class="active === i ? 'active' : ''"
-        @click="() => (active = i)"
+        @click="active = i"
     >
       <h3>{{ artist.name }}</h3>
       <div class="section-content">
@@ -18,6 +20,7 @@
     </div>
   </div>
 </template>
+
 <script setup lang="ts">
 import { ref } from 'vue';
 
@@ -25,26 +28,27 @@ const active = ref(0);
 const artists = [
   {
     name: "Mountain Biking sa bukid",
-    backgroundUrl: "'/src/assets/interest/biking.jpg'"
+    backgroundUrl: '/src/assets/interest/biking.jpg'
   },
   {
     name: "Coding sa beach",
-    backgroundUrl: "'/src/assets/interest/code.jpg'"
+    backgroundUrl: '/src/assets/interest/code.jpg'
   },
   {
     name: "Gaming sa Office",
-    backgroundUrl: "'/src/assets/interest/gaming.jpg'"
+    backgroundUrl: '/src/assets/interest/gaming.jpg'
   },
   {
     name: "Offroading sa road",
-    backgroundUrl: "'/src/assets/interest/offroading.jpg'"
+    backgroundUrl: '/src/assets/interest/offroading.jpg'
   },
   {
     name: "Gigs sa silingan",
-    backgroundUrl: "'/src/assets/interest/music.jpg'"
+    backgroundUrl: '/src/assets/interest/music.jpg'
   }
 ];
 </script>
+
 
 <style scoped lang="scss">
 .title {
