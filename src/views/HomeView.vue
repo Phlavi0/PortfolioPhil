@@ -104,8 +104,8 @@ function toggleSubmenu() {
             <span aria-hidden="true">&times;</span>
           </button>
         </div><!-- /.modal-header -->
-        <embed src="/src/assets/PHILIP AUGUSTINE CADUNGOG.pdf"
-               type="application/pdf" width="100%" height="500px">
+        <iframe src="/src/assets/PHILIP AUGUSTINE CADUNGOG.pdf"
+                type="application/pdf" width="100%" height="500px"></iframe>
           <div class="row text-center">
             <a class="btn td-btn outline green iconBtn mb-30" href="https://www.linkedin.com/in/philip-augustine-cadungog-823777262"
                target="_blank"><span class="glyphicon glyphicon-user"></span> View LinkedIn Profile</a>
