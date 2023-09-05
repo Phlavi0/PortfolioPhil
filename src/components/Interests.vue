@@ -5,7 +5,7 @@
         class="listL"
         v-for="(artist, i) in artists"
         :key="i"
-        :style="{ backgroundImage: `url(https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/12/Woman-Riding-Rented-Bicycle-In-A-City.-Cycling-and-smiling-1296x728-header-1296x728.jpg?w=1155&h=1528)` }"
+        :style="{ backgroundImage: `url(${artist.backgroundUrl})` }"
         :class="active === i ? 'active' : ''"
         @click="active = i"
     >
@@ -28,23 +28,23 @@ const active = ref(0);
 const artists = [
   {
     name: "Mountain Biking sa bukid",
-    backgroundUrl: '/src/assets/interest/biking.jpg'
+    backgroundUrl: 'src/assets/interest/biking.jpg'
   },
   {
     name: "Coding sa beach",
-    backgroundUrl: '/src/assets/interest/code.jpg'
+    backgroundUrl: 'src/assets/interest/code.jpg'
   },
   {
     name: "Gaming sa Office",
-    backgroundUrl: '/src/assets/interest/gaming.jpg'
+    backgroundUrl: 'src/assets/interest/gaming.jpg'
   },
   {
     name: "Offroading sa road",
-    backgroundUrl: '/src/assets/interest/offroading.jpg'
+    backgroundUrl: 'src/assets/interest/offroading.jpg'
   },
   {
     name: "Gigs sa silingan",
-    backgroundUrl: '/src/assets/interest/music.jpg'
+    backgroundUrl: 'src/assets/interest/music.jpg'
   }
 ];
 </script>
