@@ -104,7 +104,7 @@ function toggleSubmenu() {
             <span aria-hidden="true">&times;</span>
           </button>
         </div><!-- /.modal-header -->
-        <embed src="src/assets/PHILIP AUGUSTINE CADUNGOG.pdf"
+        <embed src="https://github.com/Phlavi0/PortfolioPhil/blob/master/src/assets/PHILIP%20AUGUSTINE%20CADUNGOG.pdf"
                frameborder="0" width="100%" height="500px">
           <div class="row text-center">
             <a class="btn td-btn outline green iconBtn mb-30" href="https://www.linkedin.com/in/philip-augustine-cadungog-823777262"
