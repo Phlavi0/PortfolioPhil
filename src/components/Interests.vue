@@ -1,11 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-
 const active = ref(0);
 const artists = [
   {
     name: "Mountain Biking sa bukid",
-    backgroundUrl: 'src/assets/interest/biking.jpg'
+    backgroundUrl: 'https://github.com/Phlavi0/PortfolioPhil/blob/master/src/assets/interest/biking.jpg?raw=true'
   },
   {
     name: "Coding sa beach",
