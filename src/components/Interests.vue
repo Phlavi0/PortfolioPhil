@@ -1,7 +1,7 @@
 <template>
   <h1 class="title fixed-top inter">SOME OF <span class="outlinetext">MY INTERESTS</span></h1>
-  <ul>
-    <li
+  <div class="listU">
+    <div class="listL"
         v-for="(artist, i) in artists"
         :style="{ backgroundImage: 'url(' + artist.backgroundUrl + ')' }"
         :class="active === i ? 'active' : ''"
@@ -15,8 +15,8 @@
           </div>
         </div>
       </div>
-    </li>
-  </ul>
+    </div>
+  </div>
 </template>
 <script setup lang="ts">
 import { ref } from 'vue';
@@ -72,7 +72,7 @@ const artists = [
   grid-gap: 24px;
 }
 
-ul {
+.listU {
   display: flex;
   min-height: 750px;
   height: 100vh;
@@ -96,7 +96,7 @@ ul {
   }
 }
 
-li {
+.listL {
   flex: 1;
   display: flex;
   align-items: stretch;
