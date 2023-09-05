@@ -104,9 +104,16 @@ function toggleSubmenu() {
             <span aria-hidden="true">&times;</span>
           </button>
         </div><!-- /.modal-header -->
-        <iframe src="/src/assets/PHILIP AUGUSTINE CADUNGOG.pdf"
-                type="application/pdf" width="100%" height="500px"></iframe>
+        <div style="position: relative; width: 100%; height: 0; padding-top: 141.4286%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+          <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                  src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFQ5aoydBM&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+          </iframe>
+        </div>
           <div class="row text-center">
+            <a class="btn td-btn outline green iconBtn mb-30" href="src/assets/PHILIP AUGUSTINE CADUNGOG.pdf"
+               download> Download Resume</a>
             <a class="btn td-btn outline green iconBtn mb-30" href="https://www.linkedin.com/in/philip-augustine-cadungog-823777262"
                target="_blank"><span class="glyphicon glyphicon-user"></span> View LinkedIn Profile</a>
           </div><!-- /.modal-footer -->
