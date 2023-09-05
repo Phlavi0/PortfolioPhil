@@ -43,7 +43,7 @@
       </div>
       <div class="carousel-item">
         <div class="post">
-          <img src="/src/assets/interest/biking.jpg" class="post-thumb center" alt=""/>
+          <img src="../assets/dentalsystem.png" class="post-thumb center" alt=""/>
           <div class="post-text">
             <h2 class="post-title inter">DENTAL INFORMATION AND APPOINTMENT SYSTEM</h2>
             <div class="post-excerpt">- Developed using Visual Basic and DB2 <br>

@@ -36,7 +36,7 @@
         <tr v-for="track in tracks.slice(0, 7)">
           <th scope="row">{{ tracks.indexOf(track) + 1 }}</th>
           <td v-if="track.date?.['#text'] !== undefined">
-            <img style="max-height: 50px;" :src="getimgURL(track)" alt="">
+
           </td>
           <td v-else>
             <img class="fa-beat-fade" style="max-height: 50px;" :src="getimgURL(track)" alt="">
