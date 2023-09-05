@@ -5,7 +5,7 @@
         class="listL"
         v-for="(artist, i) in artists"
         :key="i"
-        :style="{ backgroundImage: `url(${artist.backgroundUrl})` }"
+        :style="{ backgroundImage: `url(https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/12/Woman-Riding-Rented-Bicycle-In-A-City.-Cycling-and-smiling-1296x728-header-1296x728.jpg?w=1155&h=1528)` }"
         :class="active === i ? 'active' : ''"
         @click="active = i"
     >
