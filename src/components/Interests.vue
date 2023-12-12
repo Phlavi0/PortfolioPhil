@@ -25,7 +25,7 @@ const artists = [
 ];
 </script>
 <template>
-  <h1 class="title fixed-top inter">SOME OF <span class="outlinetext">MY INTERESTS</span></h1>
+  <h1 class="title fixed-top unifont">SOME OF <span class="outlinetext">MY INTERESTS</span></h1>
   <div class="listU">
     <div
         class="listL"
@@ -64,9 +64,6 @@ const artists = [
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   -webkit-text-fill-color: transparent;
-}
-.inter {
-  font-family: "Inter Black",serif;
 }
 
 .bio {

@@ -1,19 +1,19 @@
 <template>
-  <div class="hiim fixed-top inter">
+  <div class="hiim fixed-top unifont">
     <h1>HI, I AM PHILIP CADUNGOG,
       <br>A <span class="trans">DEVELOPER </span>BASED IN <span class="trans">DUMAGUETE CITY</span>
     </h1>
   </div>
 
   <div class="padding text-md-center">
-    <h3 class="inter">LANGUAGES</h3>
+    <h3 class="unifont">LANGUAGES</h3>
       <img class="iconpad anim" src="../assets/icons/v61_10.png" alt="C plus plus" title="C plus plus"/>
       <img class="iconpad anim" src="../assets/icons/v61_11.png" alt="PHP" title="PHP"/>
       <img class="iconpad anim" src="../assets/icons/Typescript.png" height="90" width="90" alt="TypeScript" title="TypeScript"/>
       <img class="iconpad anim" src="../assets/icons/v61_15.png" alt="Java" title="Java"/>
       <img class="iconpad anim" src="../assets/icons/v61_19.png" alt="C sharp" title="C sharp"/>
 
-    <h3 class="inter">FRAMEWORKS</h3>
+    <h3 class="unifont">FRAMEWORKS</h3>
     <div class="iconpack">
       <img class="iconpad anim" src="../assets/icons/v61_13.png" alt="Laravel" title="Laravel"/>
       <img class="iconpad anim" src="../assets/icons/v61_14.png" alt="Vue 3" title="Vue 3"/>
@@ -75,9 +75,6 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   -webkit-text-fill-color: transparent;
-}
-.inter{
-  font-family: "Inter Black",serif;
 }
   .hiim
   {

@@ -45,7 +45,7 @@ countapi.visits().then((result) => {
 .e13_5, .e13_6{
   position:absolute;
   top:232px;
-  font-family:"Inter Black",serif;
+  font-family:"Arial Black",serif;
   text-align: center;
 }
 .e13_6 {

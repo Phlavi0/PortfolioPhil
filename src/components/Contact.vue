@@ -26,7 +26,7 @@ h2 {
   font-size: 2.5rem;
   text-transform: uppercase;
   letter-spacing: 0.7rem;
-  font-family: "Inter Black",serif;
+  font-family: "Arial Black",serif;
 }
 /*social list main*/
 .social-footer h2 {

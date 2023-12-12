@@ -61,7 +61,7 @@ function toggleSubmenu() {
       <contact/>
     </section>
     <footer class="bg-black">
-      <div class="container">
+      <div class="container semifont">
         <h2 class="text-center">Get in touch</h2>
         <div class="row contact">
           <div class="col-md-6 text-right">
@@ -86,7 +86,7 @@ function toggleSubmenu() {
             </div>
           </div>
         </div>
-        <p class="text-center">
+        <p class="text-center semifont">
           PHILIP AUGUSTINE B. CADUNGOG <br>
           <span style="font-size: 12px; opacity: 0.5">ALL RIGHTS RESERVED. 2023</span>
         </p>
@@ -112,7 +112,7 @@ function toggleSubmenu() {
           </iframe>
         </div>
           <div class="row text-center">
-            <a class="btn td-btn outline green iconBtn mb-30" href="src/assets/PHILIP AUGUSTINE CADUNGOG.pdf"
+            <a class="btn td-btn outline green iconBtn mb-30" href="src/assets/aaCADUNGOG-cv.pdf"
                download> Download Resume</a>
             <a class="btn td-btn outline green iconBtn mb-30" href="https://www.linkedin.com/in/philip-augustine-cadungog-823777262"
                target="_blank"><span class="glyphicon glyphicon-user"></span> View LinkedIn Profile</a>
@@ -232,7 +232,6 @@ footer {
 }
 
 .contact-text {
-  font-family: "Lato", serif;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.33rem;

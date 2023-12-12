@@ -1,5 +1,5 @@
 <template>
-  <h1 class="title fixed-top inter">SOME OF <span  class="outlinetext">MY WORK</span></h1>
+  <h1 class="title fixed-top unifont">SOME OF <span  class="outlinetext">MY WORK</span></h1>
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -16,7 +16,7 @@
         <div class="post">
           <img src="../assets/vetclinic.png" class="post-thumb center" alt=""/>
           <div class="post-text">
-            <h2 class="post-title inter">VETCARE</h2>
+            <h2 class="post-title unifont">VETCARE</h2>
             <div class="post-excerpt">
               A WEB-BASED PET CARE MANAGEMENT SYSTEM FOR THE CATS N DOGS VETERINARY
               CLINIC IN DUMAGUETE CITY<br>
@@ -32,7 +32,7 @@
           <div class="post">
             <img src="../assets/bloodbank.png" class="post-thumb center" alt=""/>
           <div class="post-text">
-            <h3 class="post-title inter">BLOOD BANK SYSTEM</h3>
+            <h3 class="post-title unifont">BLOOD BANK SYSTEM</h3>
             <div class="post-excerpt">- Developed using Laravel Framework and PHP. <br>
               - Assigned in designing (UI) frontend of the system.
               <a class="float-end text-white" href="https://ccs82022.github.io/" target="_blank"><u>View Project</u></a>
@@ -45,7 +45,7 @@
         <div class="post">
           <img src="../assets/dentalsystem.png" class="post-thumb center" alt=""/>
           <div class="post-text">
-            <h2 class="post-title inter">DENTAL INFORMATION AND APPOINTMENT SYSTEM</h2>
+            <h2 class="post-title unifont">DENTAL INFORMATION AND APPOINTMENT SYSTEM</h2>
             <div class="post-excerpt">- Developed using Visual Basic and DB2 <br>
               - Assigned in planning, backend. and focusing more on the frontend of the system.
               <a class="float-end text-white" href="https://github.com/ryjaymes12/dentalinformationandappointmentsystem" target="_blank"><u>View Project</u></a>
@@ -57,7 +57,7 @@
         <div class="post">
           <img src="../assets/pharmsystem.png" class="post-thumb center" alt=""/>
           <div class="post-text">
-            <h2 class="post-title inter">Pharmaceutical Drug Distributor System</h2>
+            <h2 class="post-title unifont">Pharmaceutical Drug Distributor System</h2>
             <div class="post-excerpt">- Developed using Visual Basic and DB2 <br>
               - Assigned with designing the database and the back-end.
               <a class="float-end text-white" href="https://github.com/ryjaymes12/pdds" target="_blank"><u>View Project</u></a>
@@ -152,10 +152,6 @@
   margin-left: 15%;
   margin-bottom: 5%;
 }
-.inter{
-  font-family: "Inter Black",serif;
-}
-
 .carousel-indicators{
   margin-top: 10px;
 }

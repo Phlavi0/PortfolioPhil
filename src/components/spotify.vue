@@ -11,13 +11,14 @@
           <span class="e68_99 fw-bold">Phil Austin <br>
             <span style="font-size: 12px">10 public play lists | 6 Followers</span></span>
         </div>
-        <div class="playlistt inter">Playlists</div>
+        <div class="playlistt unifont">Playlists</div>
       <ul style="list-style-type: none">
         <li><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0mqLF7j8TXMMUGLn5GNnvl?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></li>
         <li><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1zvMMlppmYMq3ngfvNTJ1s?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></li>
         <li><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/458n0UKC0FkL1hyFWe70IY?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></li>
       </ul>
     </div>
+  <section>
     <div class="recent-tracks">
       <h3 class="recent-track-title">Recent Tracks · Phil Austin</h3>
       <p class="paragraph">Live data From last.fm API</p>
@@ -51,6 +52,8 @@
         </tbody>
       </table>
     </div>
+  </section>
+
 </template>
 
 <script setup lang="ts">
@@ -105,10 +108,6 @@ function getimgURL(track: any): string {
 
 }
 
-
-.inter {
-  font-family: "Inter Black", serif;
-}
 .paragraph{
   font-size: 13px;
 }
@@ -117,7 +116,7 @@ th, td {
 }
 @media screen and (min-width: 992px) {
   .recent-tracks{
-    max-width: 750px;
+    width: 600px;
     overflow: hidden;
     margin-left: 50px;
     margin-right: 50px;
