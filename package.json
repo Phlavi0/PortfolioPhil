@@ -2,6 +2,14 @@
   "name": "portfoliophil",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=14.17.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Phlavi0/PortfolioPhil"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
