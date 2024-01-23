@@ -18,7 +18,6 @@
         <li><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/458n0UKC0FkL1hyFWe70IY?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></li>
       </ul>
     </div>
-  <section>
     <div class="recent-tracks">
       <h3 class="recent-track-title">Recent Tracks · Phil Austin</h3>
       <p class="paragraph">Live data From last.fm API</p>
@@ -52,7 +51,6 @@
         </tbody>
       </table>
     </div>
-  </section>
 
 </template>
 
@@ -72,6 +70,7 @@ function getimgURL(track: any): string {
 </script>
 
 <style scoped>
+
 .e68_100 {
   width: 282px;
   height: 76px;
@@ -102,12 +101,6 @@ function getimgURL(track: any): string {
   letter-spacing: 0;
 }
 
-.profiletag {
-  margin-top: 50px;
-  margin-left: 50px;
-
-}
-
 .paragraph{
   font-size: 13px;
 }
@@ -116,23 +109,28 @@ th, td {
 }
 @media screen and (min-width: 992px) {
   .recent-tracks{
-    width: 600px;
-    overflow: hidden;
+
     margin-left: 50px;
     margin-right: 50px;
-  }
-  .class-iframe{
-    margin-right: 20px;
   }
 }
 
 @media screen and (min-width: 768px){
+  .recent-tracks{
 
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 }
 
-@media screen and (max-width: 767px) {
 
+@media screen and (max-width: 767px) {
+  .recent-tracks{
+    margin-left: 20px;
+    margin-right: 20px;
   }
+}
+
 
 
 </style>

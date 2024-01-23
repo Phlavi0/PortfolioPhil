@@ -1,6 +1,6 @@
 <template>
-  <section id="contact">
-    <section class="social-footer text-center scroll" id="contacts">
+  <div id="contact">
+    <div class="social-footer text-center scroll" id="contacts">
       <div class="container">
         <h2>Social links</h2>
         <ul class="social-list">
@@ -14,8 +14,8 @@
           </a></li>
         </ul>
       </div>
-    </section>
-  </section>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
