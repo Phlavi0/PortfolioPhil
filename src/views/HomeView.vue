@@ -1,12 +1,11 @@
 <script setup lang="ts">
-import {ref} from "vue";
+import {onMounted, ref} from "vue";
 import Top from "../components/Top.vue";
 import Languages from "../components/Languages.vue";
 import Works from "../components/Works.vue";
 import Interests from "../components/Interests.vue";
 import Contact from "../components/Contact.vue";
 import Spotify from "@/components/spotify.vue";
-import Recenttracks from "@/components/recenttracks.vue";
 
 const isDropdownOpen = ref(false);
 const isSubmenuOpen = ref(false);
@@ -36,7 +35,6 @@ function toggleSubmenu() {
       <a href="#Contact" class="Quick-navigation-item pad">Contact</a>
       <div class="Scroll-progress-indicator"></div>
     </nav>
-
     <section id="Top" class="js-scroll-step">
       <Top/>
     </section>
@@ -89,6 +87,7 @@ function toggleSubmenu() {
         <p class="text-center semifont">
           PHILIP AUGUSTINE B. CADUNGOG <br>
           <span style="font-size: 12px; opacity: 0.5">ALL RIGHTS RESERVED. 2023</span>
+
         </p>
       </div>
     </footer>
@@ -108,7 +107,7 @@ function toggleSubmenu() {
  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
  border-radius: 8px; will-change: transform;">
           <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-                  src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFQ5aoydBM&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                  src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF9zmpsNWc&#x2F;bAVj9DaGkETClOI-4RDRhw&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
           </iframe>
         </div>
           <div class="row text-center">

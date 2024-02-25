@@ -8,6 +8,4 @@ import "splitting/dist/splitting.css";
 import "splitting/dist/splitting-cells.css";
 
 const app = createApp(App)
-
-
 app.mount('#app')

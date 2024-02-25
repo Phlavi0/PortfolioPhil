@@ -33,8 +33,8 @@
         </tr>
         </thead>
         <tbody>
-        <tr v-for="track in tracks.slice(0, 7)">
-          <th scope="row">{{ tracks.indexOf(track) + 1 }}</th>
+        <tr v-for="(track, index) in tracks.slice(0, 7)">
+          <th scope="row">{{ index + 1 }}</th>
           <td v-if="track.date?.['#text'] !== undefined">
             <img style="max-height: 50px;" :src="getimgURL(track)" alt="">
           </td>

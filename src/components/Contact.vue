@@ -21,6 +21,7 @@
 <script setup lang="ts">
 </script>
 
+
 <style scoped>
 h2 {
   font-size: 2.5rem;
