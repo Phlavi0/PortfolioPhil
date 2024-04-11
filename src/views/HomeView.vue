@@ -110,7 +110,7 @@ function toggleSubmenu() {
                   src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGB_WSH8ak&#x2F;MccYLkoEobbu1rRrd99Nsg&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
           </iframe>
         </div>
-        <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGB_WSH8ak&#x2F;MccYLkoEobbu1rRrd99Nsg&#x2F;view?utm_content=DAGB_WSH8ak&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Copy of Grey Clean CV Resume Photo</a> by Phil Austin
+        <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGB_WSH8ak&#x2F;MccYLkoEobbu1rRrd99Nsg&#x2F;view?utm_content=DAGB_WSH8ak&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>
           <div class="row text-center">
             <a class="btn td-btn outline green iconBtn mb-30" href="src/assets/aaCADUNGOG-cv.pdf"
                download> Download Resume</a>
