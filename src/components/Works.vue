@@ -45,7 +45,7 @@ const projects = ref<any>([
 
   {
 
-    src: "../assets/vetcare.jpg",
+    src: "https://github.com/Phlavi0/PortfolioPhil/blob/master/src/assets/vetcare.jpg?raw=true",
 
     title: "VetCare",
 
@@ -58,7 +58,7 @@ const projects = ref<any>([
 
   {
 
-    src: "../assets/bloodbank.png",
+    src: "https://github.com/Phlavi0/PortfolioPhil/blob/master/src/assets/bloodbank.png?raw=true",
 
     title: "Blood Bank System",
 
@@ -70,7 +70,7 @@ const projects = ref<any>([
 
   {
 
-    src: "../assets/dentalsystem.png",
+    src: "https://github.com/Phlavi0/PortfolioPhil/blob/master/src/assets/dentalsystem.png?raw=true",
 
     title: "DENTAL INFORMATION AND APPOINTMENT SYSTEM",
 
@@ -82,7 +82,7 @@ const projects = ref<any>([
 
   {
 
-    src: "../assets/pharmsystem.png",
+    src: "https://github.com/Phlavi0/PortfolioPhil/blob/master/src/assets/pharmsystem.png?raw=true",
 
     title: "Pharmaceutical Drug Distributor System",
 
