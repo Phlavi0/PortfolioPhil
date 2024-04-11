@@ -17,7 +17,7 @@ countapi.visits().then((result) => {
 }
 @media screen and (min-width: 1024px) {
   .ei100_37_38_3{
-    max-height: 600px;
+    max-height: 650px;
   }
   .e13_5, .e13_6{
     font-size: 80px;
