@@ -45,7 +45,7 @@ const projects = ref<any>([
 
   {
 
-    src: "src/assets/vetcare.jpg",
+    src: "../assets/vetcare.jpg",
 
     title: "VetCare",
 
@@ -58,7 +58,7 @@ const projects = ref<any>([
 
   {
 
-    src: "src/assets/bloodbank.png",
+    src: "../assets/bloodbank.png",
 
     title: "Blood Bank System",
 
@@ -70,7 +70,7 @@ const projects = ref<any>([
 
   {
 
-    src: "src/assets/dentalsystem.png",
+    src: "../assets/dentalsystem.png",
 
     title: "DENTAL INFORMATION AND APPOINTMENT SYSTEM",
 
@@ -82,7 +82,7 @@ const projects = ref<any>([
 
   {
 
-    src: "src/assets/pharmsystem.png",
+    src: "../assets/pharmsystem.png",
 
     title: "Pharmaceutical Drug Distributor System",
 
