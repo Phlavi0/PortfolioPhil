@@ -1,6 +1,6 @@
 <template>
     <span  class="e13_6 ">PHILIP CADUNGOG</span>
-        <img src="/src/assets/centerpic.jpg" class="ei100_37_38_3" alt="">
+        <img src="/src/assets/pina-steve-trabajo.png" class="ei100_37_38_3" alt="">
     <span  class="e13_5">PHILIP CADUNGOG</span>
 </template>
 
@@ -13,11 +13,9 @@ countapi.visits().then((result) => {
 </script>
 
 <style scoped>
-.ei100_37_38_3{
-}
 @media screen and (min-width: 1024px) {
   .ei100_37_38_3{
-    max-height: 650px;
+    height: 100%
   }
   .e13_5, .e13_6{
     font-size: 80px;
