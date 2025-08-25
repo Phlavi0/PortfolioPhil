@@ -1,19 +1,19 @@
 <template>
   <h1 class="title fixed-top unifont">SOME OF <span class="outlinetext">MY WORK</span></h1>
   <div class="projcard-container">
-    <div class="projcard" v-for="(project, index) in projects" :key="index">
-      <div class="projcard-innerbox">
-        <img class="projcard-img" :src="project.src" alt="" />
-        <div class="projcard-textbox">
-          <div class="projcard-title">{{project.title}}</div>
-          <div class="projcard-subtitle">{{project.subtitle}}</div>
-          <div class="projcard-bar"></div>
-          <div class="projcard-description">{{project.description}}</div>
-          <div class="projcard-tagbox">
-            <span class="projcard-tag" v-for="(lang, index) in project.langs" :key="index">{{lang}}</span>
+    <div class="projcard" v-for="(project, index) in projects" :key="index" @click="openProject(project.href)">
+        <div class="projcard-innerbox">
+          <img class="projcard-img" :src="project.src" alt="" />
+          <div class="projcard-textbox">
+            <div class="projcard-title">{{project.title}}</div>
+            <div class="projcard-subtitle">{{project.subtitle}}</div>
+            <div class="projcard-bar"></div>
+            <div class="projcard-description">{{project.description}}</div>
+            <div class="projcard-tagbox">
+              <span class="projcard-tag" v-for="(lang, index) in project.langs" :key="index">{{lang}}</span>
+            </div>         
           </div>
-        </div>
-      </div>
+        </div>     
     </div>
 
   </div>
@@ -23,7 +23,31 @@
 import { ref } from 'vue';
 
 
+const openProject = (url: string) => {
+  if (url) {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  }
+};
+
 const projects = ref<any>([
+  {
+
+    src: "https://github.com/Phlavi0/PortfolioPhil/blob/master/src/assets/JewishCourses.png?raw=true",
+
+    title: "Jewish Courses",
+    subtitle: "A Modern Learning Management System with Affiliate Marketing.",
+
+    description: "A custom-built Learning Management System featuring user auth, course management, and a comprehensive affiliate engine. The backend, built with Node.js and Express, handles complex financial logic: calculating affiliate commissions, processing student payments via Stripe, and automating split payouts to instructors and affiliates.",
+
+    dir: "https://www.canva.com/design/DAFoaVAEKUI/3seoRasUpnuEBOd-49lZHw/view?utm_content=DAFoaVAEKUI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
+    langs:[
+      "React",
+      "Node.js",
+      "Stripe payment API",
+    ],
+    href: "https://jewishcourses-backend-1061871693366.us-central1.run.app",
+
+  },
 
   {
 
